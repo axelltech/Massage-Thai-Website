@@ -11,8 +11,10 @@ import { Image } from "astro:assets";
 
 <MainLayout title="Thai Massage Contact">
 		<div>
-			<ModuleTop title="Galerie"/>
-            <div class="flex flex-wrap gap-[100px]">
+            <!-- <div class="bg-price-bg w-[1440px] h-[440px] object-cover"> -->
+            <!-- </div> -->
+            <ModuleTop title="Galerie"/>
+            <div class="flex flex-wrap gap-[100px] justify-around">
                 <div class="mt-4">
                         <a href="../src/img/photoFour.jpeg" data-fancybox="gallery" data-slug="cat">
                             <Image src={photoFour} alt="photoFour" width="200" height="200" />
@@ -51,11 +53,6 @@ import { Image } from "astro:assets";
                 <div class="mt-4">
                     <a href="../src/img/photoFive.jpeg" class="fancybox" data-fancybox="gallery">
                         <Image src={photoFive} alt="photoFive" width="200" height="200" />
-                    </a>
-                </div>
-                <div class="mt-4">
-                    <a href="../src/img/photoOne.jpeg" class="fancybox" data-fancybox="gallery">
-                        <Image src={photoOne} alt="photoOne" width="200" height="200" />
                     </a>
                 </div>
             </div>

@@ -1,3 +1,9 @@
+---
+import logo from '../img/logo-thai-senzation.png';
+import { Image } from "astro:assets";
+---
+
+
 <header
   class="fixed z-[1000] top-0 left-0 w-screen h-auto"
   id="header"
@@ -8,7 +14,7 @@
     >
       <div class="brand">
         <a class="uppercase text-white-main text-lg font-semibold" href="/"
-          ><h3>Thai Logo</h3></a
+          ><Image src={logo} alt="logo" width="200" height="200"></a
         >
       </div>
       <div class="nav-list">

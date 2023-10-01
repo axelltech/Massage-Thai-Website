@@ -2,8 +2,12 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  // mode: 'jit',
+  mode: 'jit',
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
+// content: [
+//     "./dist/**/*.html",
+//     "./dist/**/*.js",
+//   ],
   theme: {
     screens: {
 	  sm: "480px",
@@ -48,6 +52,9 @@ module.exports = {
         pulse: "pulse 1s ease infinite",
 		scroll: "scroll 40s linear infinite"
       },
+	  backgroundImage: {
+        'price-bg': "url('../src/img/photoFive.jpeg')",
+      }
     },
   },
   plugins: [],
