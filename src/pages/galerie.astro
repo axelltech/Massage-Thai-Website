@@ -1,0 +1,68 @@
+---
+import MainLayout from '../layouts/MainLayout.astro';
+import ModuleTop from '../components/ModuleTop.astro';
+import photoOne from "../img/photoOne.jpeg";
+import photoTwo from "../img/photoTwo.jpeg";
+import photoThree from "../img/photoThree.jpeg";
+import photoFour from "../img/photoFour.jpeg";
+import photoFive from "../img/photoFive.jpeg";
+import { Image } from "astro:assets";
+---
+
+<MainLayout title="Thai Massage Contact">
+		<div>
+			<ModuleTop title="Galerie"/>
+            <div class="flex flex-wrap gap-[100px]">
+                <div class="mt-4">
+                        <a href="../src/img/photoFour.jpeg" data-fancybox="gallery" data-slug="cat">
+                            <Image src={photoFour} alt="photoFour" width="200" height="200" />
+                        </a>
+                </div>
+                <div class="mt-4">
+                    <a href="../src/img/photoFive.jpeg" class="fancybox" data-fancybox="gallery">
+                        <Image src={photoFive} alt="photoFive" width="200" height="200" />
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <a href="../src/img/photoOne.jpeg" class="fancybox" data-fancybox="gallery">
+                        <Image src={photoOne} alt="photoOne" width="200" height="200" />
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <a href="../src/img/photoTwo.jpeg" class="fancybox" data-fancybox="gallery">
+                        <Image src={photoTwo} alt="photoTwo" width="200" height="200" />
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <a href="../src/img/photoThree.jpeg" class="fancybox" data-fancybox="gallery">
+                        <Image src={photoThree} alt="photoThree" width="200" height="200" />
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <a href="../src/img/photoFive.jpeg" class="fancybox" data-fancybox="gallery">
+                        <Image src={photoFive} alt="photoFive" width="200" height="200" />
+                    </a>
+                </div>
+                <div class="mt-4">
+                        <a href="../src/img/photoFour.jpeg" data-fancybox="gallery" data-slug="cat">
+                            <Image src={photoFour} alt="photoFour" width="200" height="200" />
+                        </a>
+                </div>
+                <div class="mt-4">
+                    <a href="../src/img/photoFive.jpeg" class="fancybox" data-fancybox="gallery">
+                        <Image src={photoFive} alt="photoFive" width="200" height="200" />
+                    </a>
+                </div>
+                <div class="mt-4">
+                    <a href="../src/img/photoOne.jpeg" class="fancybox" data-fancybox="gallery">
+                        <Image src={photoOne} alt="photoOne" width="200" height="200" />
+                    </a>
+                </div>
+            </div>
+		</div>
+</MainLayout>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>

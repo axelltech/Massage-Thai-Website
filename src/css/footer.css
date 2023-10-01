@@ -1,0 +1,43 @@
+.footer-content {
+    .foot-content-top {
+      .footer-column {
+        &:last-child {
+          @apply mr-0;
+        }
+        h3 {
+          @apply font-semibold uppercase my-3 text-lg;
+        }
+        .social-media {
+          div {
+            @apply mr-3 underline;
+          }
+        }
+      }
+    }
+    .foot-content-bottom {
+      @apply mt-8 mb-5
+    }
+    hr {
+      @apply opacity-30 mt-3;
+    }
+  }
+  
+  @screen lg-media {
+    .footer-content {
+      .foot-content-top {
+        @apply flex flex-wrap justify-between;
+        .footer-column {
+          @apply mr-6;
+        }
+        hr {
+          @apply hidden;
+        }
+      }
+      .foot-content-bottom {
+        .copyright {
+          @apply flex;
+        }
+      }
+    }
+  }
+  

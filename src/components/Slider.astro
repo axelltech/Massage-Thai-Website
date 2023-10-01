@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets";
+import photoOne from "../img/photoOne.jpeg";
+import photoTwo from "../img/photoTwo.jpeg";
+import photoThree from "../img/photoThree.jpeg";
+import photoFour from "../img/photoFour.jpeg";
+import photoFive from "../img/photoFive.jpeg";
+---
+
+<div
+  class="slider h-[300px] m-auto relative flex items-center overflow-hidden"
+>
+  <div class="slider-track flex w-[calc(250px * 18)] animate-scroll">
+    <div class="slide">
+      <Image src={photoOne} alt="photoOne" width="200" height="200" />
+    </div>
+    <div class="slide">
+      <Image src={photoTwo} alt="photoTwo" width="200" height="200" />
+    </div>
+    <div class="slide">
+      <Image src={photoThree} alt="photoThree" width="200" height="200" />
+    </div>
+    <div class="slide">
+      <Image src={photoFour} alt="photoFour" width="200" height="200" />
+    </div>
+    <div class="slide">
+      <Image src={photoFive} alt="photoFive" width="200" height="200" />
+    </div>
+    <div class="slide">
+      <Image src={photoOne} alt="photoOne" width="200" height="200" />
+    </div>
+    <div class="slide">
+      <Image src={photoTwo} alt="photoTwo" width="200" height="200" />
+    </div>
+    <div class="slide">
+      <Image src={photoThree} alt="photoThree" width="200" height="200" />
+    </div>
+    <div class="slide">
+      <Image src={photoFour} alt="photoFour" width="200" height="200" />
+    </div>
+    <div class="slide">
+      <Image src={photoFive} alt="photoFive" width="200" height="200" />
+    </div>
+  </div>
+</div>

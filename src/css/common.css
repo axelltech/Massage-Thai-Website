@@ -1,0 +1,31 @@
+.deinlocuit {
+    @apply flex items-center justify-center w-full min-h-[100vh] mt-[-50px] mb-[-150px];
+  }
+
+  body {
+    @apply font-montserrat bg-black-main text-white-main;
+    a {
+        &:hover {
+            @apply text-red cursor-pointer;
+        }
+    }
+    .content {
+      @apply mx-auto max-w-[1440px] px-6 relative;
+      h2 {
+        @apply text-[50px] text-red;
+      }
+      h3 {
+          @apply text-xl font-medium uppercase;
+      }
+      h5 {
+        @apply font-medium uppercase;
+      }
+    }
+  }
+  
+
+  /* .fancybox-button {
+    div {
+        @apply w-[200px] bg-red;
+    }
+  } */

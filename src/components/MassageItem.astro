@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+  description: string;
+  time: string;
+  price: string;
+}
+
+const { title, description, time, price } = Astro.props;
+---
+
+<div class="massage-item flex justify-between w-full md:w-[600px] flex-col mb-10 max-w-[600px]">
+    <div class="flex justify-between items-center md:items-baseline">
+        <div class="">
+            <h3 class="w-min sm:w-full">
+                {title}
+            </h3>
+        </div>
+        <div class="content-massage flex">
+            <!-- <p class="description-massage">{description}</p> -->
+            <div class="text-lg flex w-max ml-2 md:ml-0 flex-col sm:flex-row items-end">
+                <div>{time}</div> 
+                <span class="hidden sm:block sm:mx-2">-</span> 
+                <div class="flex-none">{price}</div>
+            </div>
+        </div>
+    </div>
+    <!-- <hr class="border-[1px] border-solid border-red animate-pulse md:w-[400px] max-w-[480px] ml-[45px] md:ml-[78px] mt-2"/> -->
+        <!-- <hr class="border-[2px] border-solid border-red animate-pulse w-[400px] ml-[78px]"/> -->
+    <div class="bg-white-main w-full h-[1px] mt-4">
+</div>
+</div>
