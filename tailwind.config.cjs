@@ -18,7 +18,7 @@ module.exports = {
     },
     colors: {
       "black-main": "#000000",
-      "red": "#e70039",
+      "red": "#b70000",
       "white-main": "#FAFAF9",
       green: {
         400: "#9b0026",
@@ -50,7 +50,7 @@ module.exports = {
       },
       animation: {
         pulse: "pulse 1s ease infinite",
-		scroll: "scroll 40s linear infinite"
+		    scroll: "scroll 40s linear infinite",
       },
 	  backgroundImage: {
         'price-bg': "url('../src/img/photoFive.jpeg')",

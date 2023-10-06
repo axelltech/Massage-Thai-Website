@@ -4,12 +4,23 @@
         &:last-child {
           @apply mr-0;
         }
-        h3 {
-          @apply font-semibold uppercase my-3 text-lg;
+        h5 {
+          @apply font-semibold uppercase text-lg leading-none mb-[6px];
         }
         .social-media {
           div {
             @apply mr-3 underline;
+          }
+        }
+        .title-foot-col {
+          @apply w-max mb-3 mt-8;
+          hr {
+            @apply border-solid border-[1px] border-red;
+          }
+        }
+        div {
+          ul li {
+            @apply my-3;
           }
         }
       }
@@ -17,8 +28,8 @@
     .foot-content-bottom {
       @apply mt-8 mb-5
     }
-    hr {
-      @apply opacity-30 mt-3;
+    .bottom-foot-col {
+      @apply mt-2 opacity-[0.5];
     }
   }
   
@@ -28,14 +39,12 @@
         @apply flex flex-wrap justify-between;
         .footer-column {
           @apply mr-6;
+          .title-foot-col {
+            @apply my-0 mb-3;
+          }
         }
         hr {
-          @apply hidden;
-        }
-      }
-      .foot-content-bottom {
-        .copyright {
-          @apply flex;
+          /* @apply hidden; */
         }
       }
     }

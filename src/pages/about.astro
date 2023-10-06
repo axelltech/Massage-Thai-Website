@@ -1,11 +1,24 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
-import ModuleTop from '../components/ModuleTop.astro';
+import MainLayout from "../layouts/MainLayout.astro";
+import ModuleTop from "../components/ModuleTop.astro";
+import ModuleCMN from "../components/ModuleCMN.astro";
 ---
 
 <MainLayout title="Thai Massage About">
-        <div>
-            <ModuleTop title="Despre noi"
-                />
-        </div>
+  <div class="content-cmn-sec">
+    <ModuleTop title="Despre noi" />
+    <ModuleCMN
+      content="THAI SENSATION este primul și singurul masaj erotic din Cluj-Napoca, în care maseuzele sunt chiar din țara lor de origine, Thailanda."
+    >
+      <p>
+        Astfel, au o pregătire și un certificat de maseuză thailandeză. Vrem ca
+        TU să vii cu mare încredere și noi îți vom garanta că guști din masajul
+        thailandez erotic unde te vei simți foarte relaxat, calm și distins
+        exact ca în vise.
+      </p>
+</ModuleCMN>
+<div class="mb-[191px]">
+</div>
+<!-- de scos asta de sus -->
+  </div>
 </MainLayout>

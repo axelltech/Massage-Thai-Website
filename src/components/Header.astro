@@ -2,8 +2,6 @@
 import logo from '../img/logo-thai-senzation.png';
 import { Image } from "astro:assets";
 ---
-
-
 <header
   class="fixed z-[1000] top-0 left-0 w-screen h-auto"
   id="header"
@@ -14,17 +12,17 @@ import { Image } from "astro:assets";
     >
       <div class="brand">
         <a class="uppercase text-white-main text-lg font-semibold" href="/"
-          ><Image src={logo} alt="logo" width="200" height="200"></a
+          ><Image src={logo} alt="logo" width="140" height="200"></a
         >
       </div>
       <div class="nav-list">
         <div
-          class="hamburger relative h-[60px] w-[60px] border-[3px] border-solid border-white-main rounded-full flex items-center justify-center z-[100] cursor-pointer scale-[0.8]"
+          class="hamburger relative h-[60px] w-[60px] border-[3px] border-solid border-white-main rounded-full flex items-center justify-center z-[100] cursor-pointer scale-[0.8] md:mr-4"
         >
           <div class="bar h-[2px] w-[30px] relative bg-white-main z-[-1]"></div>
         </div>
         <ul
-          class="list-none absolute w-screen h-screen left-full top-0 flex items-center flex-col z-[1] justify-center over overflow-x-hidden"
+          class="list-none absolute w-screen h-screen left-full top-0 flex items-center flex-col z-[1] justify-center over overflow-x-hidden bg-black-main opacity-90"
         >
           <li><a href="/" data-after="Acasa">Acasa</a></li>
           <li><a href="/preturi" data-after="Preturi">Preturi</a></li>

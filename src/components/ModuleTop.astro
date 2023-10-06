@@ -1,17 +1,20 @@
 ---
 interface Props {
   title: string;
-//   image: string;
 }
 
 const { title } = Astro.props;
 // import { Image } from "astro:assets";
-
 ---
-<div class="module-top flex flex-wrap items-center justify-center h-[200px] mb-[100px]">
-    <div class="flex text-center items-center relative">
-        <!-- <Image src={image} alt="ALEX" width="1440" height="440" -->
-       <!-- /> -->
-       <h2 class="text-[50px] uppercase w-full flex items-center justify-center absolute">{title}</h2> 
-    </div>
+
+<div
+  class="module-top flex flex-wrap items-center justify-center h-[200px] mt-[100px] mb-[70px]"
+>
+  <div class="flex text-center items-center relative">
+    <!-- <Image src={image} alt="ALEX" width="1440" height="440" -->
+    <!-- /> -->
+    <h2 class="text-[50px] uppercase w-full flex items-center justify-center">
+      {title}
+    </h2>
+  </div>
 </div>

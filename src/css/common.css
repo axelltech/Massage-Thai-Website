@@ -2,6 +2,10 @@
     @apply flex items-center justify-center w-full min-h-[100vh] mt-[-50px] mb-[-150px];
   }
 
+  html {
+    @apply scroll-smooth;
+  }
+
   body {
     @apply font-montserrat bg-black-main text-white-main;
     a {
@@ -22,7 +26,6 @@
       }
     }
   }
-  
 
   /* .fancybox-button {
     div {

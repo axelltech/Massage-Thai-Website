@@ -1,0 +1,22 @@
+<!-- ---
+
+interface Props {
+    src: any;
+    alt: string;
+    href: any;
+}
+
+import { Image } from "astro:assets";
+
+const {href, src, alt} = Astro.props;
+
+---
+<div>
+    <a href={href} class="fancybox" data-fancybox="gallery">
+        <Image src={src} alt={alt} width="200" height="200"/>
+    </a>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> -->
