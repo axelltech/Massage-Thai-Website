@@ -27,12 +27,3 @@
     transform: rotateZ(180deg);
   }
 }
-
-.gallery-photos {
-  a {
-    transition: 0.5s ease-in-out;
-    &:hover {
-      filter: brightness(70%);
-    }
-  }
-}

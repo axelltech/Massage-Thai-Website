@@ -1,34 +1,38 @@
-.deinlocuit {
-    @apply flex items-center justify-center w-full min-h-[100vh] mt-[-50px] mb-[-150px];
-  }
+html {
+  @apply scroll-smooth;
+}
 
-  html {
-    @apply scroll-smooth;
+body {
+  @apply font-montserrat bg-black-main text-white-main;
+  .content {
+    @apply mx-auto max-w-[1440px] px-6 relative;
+    h2 {
+      @apply text-[50px] text-red;
+    }
+    h3 {
+      @apply text-xl font-medium uppercase;
+    }
+    h5 {
+      @apply font-medium uppercase;
+    }
   }
+}
 
+@screen lg-media {
   body {
-    @apply font-montserrat bg-black-main text-white-main;
-    a {
+    ul {
+      a {
+        @apply relative py-1;
         &:hover {
-            @apply text-red cursor-pointer;
+          @apply text-red cursor-pointer relative transition-all;
+          &::before {
+            @apply w-full;
+          }
         }
-    }
-    .content {
-      @apply mx-auto max-w-[1440px] px-6 relative;
-      h2 {
-        @apply text-[50px] text-red;
-      }
-      h3 {
-          @apply text-xl font-medium uppercase;
-      }
-      h5 {
-        @apply font-medium uppercase;
+        &::before {
+          @apply absolute content-[''] w-0 h-[1px] left-0 bottom-0 transition-all bg-red duration-700;
+        }
       }
     }
   }
-
-  /* .fancybox-button {
-    div {
-        @apply w-[200px] bg-red;
-    }
-  } */
+}

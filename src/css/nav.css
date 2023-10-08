@@ -61,7 +61,7 @@
       li {
         @apply inline-block;
         a {
-          @apply text-base;
+          @apply text-base p-0 mx-5 pb-1;
         } 
       }
       a {

@@ -6,6 +6,8 @@ import photoTwo from "../img/photoTwo.jpeg";
 import photoThree from "../img/photoThree.jpeg";
 import photoFour from "../img/photoFour.jpeg";
 import photoFive from "../img/photoFive.jpeg";
+import photoSix from "../img/photoSix.jpg";
+import photoSeven from "../img/photoSeven.jpg";
 import { Image } from "astro:assets";
 ---
 
@@ -13,31 +15,47 @@ import { Image } from "astro:assets";
             <!-- <div class="bg-price-bg w-[1440px] h-[440px] object-cover"> -->
             <!-- </div> -->
             <ModuleTop title="Galerie"/>
-            <div class="gallery-photos flex flex-wrap gap-[50px] justify-around">
-                    <a href="../src/img/photoFour.jpeg" data-fancybox="gallery" data-slug="cat">
-                            <Image src={photoFour} alt="photoFour" width="300" height="300" />
-                    </a>
-                    <a href="../src/img/photoFive.jpeg" class="fancybox" data-fancybox="gallery">
-                        <Image src={photoFive} alt="photoFive" width="300" height="300" />
-                    </a>
-                    <a href="../src/img/photoOne.jpeg" class="fancybox" data-fancybox="gallery">
-                        <Image src={photoOne} alt="photoOne" width="300" height="300" />
-                    </a>
-                    <a href="../src/img/photoTwo.jpeg" class="fancybox" data-fancybox="gallery">
-                        <Image src={photoTwo} alt="photoTwo" width="300" height="300" />
-                    </a>
-                    <a href="../src/img/photoThree.jpeg" class="fancybox" data-fancybox="gallery">
-                        <Image src={photoThree} alt="photoThree" width="300" height="300" />
-                    </a>
-                    <a href="../src/img/photoFive.jpeg" class="fancybox" data-fancybox="gallery">
-                        <Image src={photoFive} alt="photoFive" width="300" height="300" />
-                    </a>
-                        <a href="../src/img/photoFour.jpeg" data-fancybox="gallery" data-slug="cat">
-                            <Image src={photoFour} alt="photoFour" width="300" height="300" />
-                        </a>
-                    <a href="../src/img/photoFive.jpeg" class="fancybox" data-fancybox="gallery">
-                        <Image src={photoFive} alt="photoFive" width="300" height="300" />
-                    </a>
+            <div class="gallery-photos">
+                        <div>
+                            <a href="../src/img/photoFour.jpeg" data-fancybox="gallery" data-slug="cat">
+                                    <Image src={photoFour} alt="photoFour" width="700" height="370" />
+                            </a>
+                        </div>
+                        <div class="v-stretch">
+                            <a href="../src/img/photoOne.jpeg" class="fancybox" data-fancybox="gallery">
+                                    <Image src={photoOne} alt="photoOne" width="700" height="270" />
+                                </a>
+                            </div>
+                            
+                            <div>
+                                <a href="../src/img/photoTwo.jpeg" class="fancybox" data-fancybox="gallery">
+                                        <Image src={photoTwo} alt="photoTwo" width="700" height="270" />
+                                    </a>
+                                </div>
+                               
+                                   <div>
+                                    <a href="../src/img/photoSeven.jpg" class="fancybox" data-fancybox="gallery">
+                                        <Image src={photoSeven} alt="photoSeven" width="700" height="380" />
+                                    </a>
+                                </div>
+                                <div >
+                                    <a href="../src/img/photoFive.jpeg" data-fancybox="gallery" data-slug="cat">
+                                            <Image src={photoFive} alt="photoFive" width="700" height="380" />
+                                        </a>
+                                    </div>
+                                   <div>
+                                    <a href="../src/img/photoThree.jpeg" class="fancybox" data-fancybox="gallery">
+                                            <Image src={photoThree} alt="photoThree" width="300" height="380" />
+                                        </a>
+                                    </div>
+                              
+                                <div class="h-stretch">
+                                    <a href="../src/img/photoSix.jpg" class="fancybox" data-fancybox="gallery">
+                                        <Image src={photoSix} alt="photoSix" width="700" height="270" />
+                                    </a>
+                                </div>
+                                 
+                   
 		</div>
 </MainLayout>
 

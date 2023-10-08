@@ -15,6 +15,8 @@ module.exports = {
       lg: "1025px",
       xl: "1440px",
       "lg-media": { raw: "(min-width: 1025px)" },
+      "md-media": { raw: "(min-width: 768px)" },
+      "xl-media": { raw: "(min-width: 1440px)" },
     },
     colors: {
       "black-main": "#000000",
@@ -23,6 +25,7 @@ module.exports = {
       green: {
         400: "#9b0026",
       },
+      "transparenta": "rgba(0, 0, 255, 0)"
     },
     fontFamily: {
       montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],
@@ -44,7 +47,7 @@ module.exports = {
 				transform: "translateX(0)",
 			},
 			"100%": {
-				transform: "translateX(calc(-250px * 9))",
+				transform: "translateX(calc(-504px * 5))",
 			}
 		}
       },
