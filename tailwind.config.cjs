@@ -57,7 +57,7 @@ module.exports = {
       },
 	  backgroundImage: {
         'price-bg': "url('../src/img/photoFive.jpeg')",
-      }
+      },
     },
   },
   plugins: [],

@@ -1,8 +1,11 @@
 .gallery-photos {
-  display: grid;
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 2fr));
+  @apply mx-auto max-w-[420px] grid-flow-dense auto-rows-[270px] grid gap-2;
   .h-stretch {
-    grid-column: span 3;
+    grid-column: span 2;
+  }
+  .v-stretch {
+    grid-row: span 2;
   }
 
   a {
@@ -40,15 +43,14 @@
 
 @screen md-media {
   .gallery-photos {
-    scale: 0.6;
-    margin-top: -290px;
-    /* DE UMBLAT LA MARGINE */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr));
+    @apply mx-auto max-w-[900px] grid-flow-dense auto-rows-[350px];
     .v-stretch {
       grid-row: span 2;
     }
     .h-stretch {
-        grid-column: span 3;
-      }
+      grid-column: span 2;
+    }
   }
 
   .fancybox-container {
@@ -72,16 +74,7 @@
   }
 }
 
-@screen xl-media {
-  .gallery-photos {
-    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
-    grid-auto-rows: 450px;
-    grid-auto-flow: dense;
-    .v-stretch {
-      grid-row: span 2;
-    }
-  }
-
+@screen lg-media {
   .fancybox-container {
     .fancybox-inner {
       .fancybox-navigation {

@@ -5,7 +5,7 @@ html {
 body {
   @apply font-montserrat bg-black-main text-white-main;
   .content {
-    @apply mx-auto max-w-[1440px] px-6 relative;
+    @apply mx-auto max-w-[1200px] px-6 relative;
     h2 {
       @apply text-[50px] text-red;
     }

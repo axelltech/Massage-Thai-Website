@@ -11,7 +11,7 @@ hamburger.addEventListener('click', () => {
 
 document.addEventListener('scroll', () => {
   let scroll_position = window.scrollY;
-  if(scroll_position > 50) {
+  if(scroll_position > 10) {
     header.style.backgroundColor = "#000000";
     headerNav.style.borderBottom = "1px solid rgba(255, 255, 255, 0.3)";
   } else {
@@ -20,10 +20,10 @@ document.addEventListener('scroll', () => {
   }
 })
 
-// //jQuery to switch logic and place
-// $(document).ready(function() {
-//     $.fancybox.defaults.hash = false;
-//   });
-// const options = {
-//     Hash: false,
-//   };
+//jQuery to switch logic and place
+$(document).ready(function() {
+    $.fancybox.defaults.hash = false;
+  });
+const options = {
+    Hash: false,
+  };
