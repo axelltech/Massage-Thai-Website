@@ -42,17 +42,6 @@
         .title-foot-col {
           @apply my-0 mb-3;
         }
-        .social-media {
-          a {
-            @apply flex items-center h-full;
-            &:hover {
-              @apply bg-red rounded-3xl;
-            }
-          }
-        }
-      }
-      hr {
-        /* @apply hidden; */
       }
     }
   }

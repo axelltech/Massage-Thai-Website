@@ -11,12 +11,6 @@ export default defineConfig({
       // configFile: "./postcss.config.cjs",
     }),
   ],
-  styles: {
-    content: [
-      './src/**/*.html',
-      './src/**/*.astro',
-      './src/styles/**/*.css', // Adăugați aici calea către fișierele CSS
-    ],
-  },
+ 
 });
 

@@ -2,7 +2,7 @@
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobileMenu = document.querySelector('.header .nav-bar .nav-list ul');
 const header = document.querySelector('.header.content');
-const headerNav = document.querySelector('.nav-bar');
+const headerNav = document.querySelectorAll('.nav-content');
 const cookieBox = document.querySelector(".wrapper");
 const buttons = document.querySelectorAll(".button");
 
@@ -27,27 +27,27 @@ const executeCodes = () => {
 
 window.addEventListener("load", executeCodes);
 
-
 document.addEventListener('scroll', () => {
   let scroll_position = window.scrollY;
   if(scroll_position > 10) {
     header.style.backgroundColor = "#000000";
-    headerNav.style.borderBottom = "1px solid rgba(255, 255, 255, 0.3)";
+    headerNav.forEach((elem) => {
+      elem.style.borderBottom = "1px solid rgba(255, 255, 255, 0.3)";
+    })
   } else {
     header.style.backgroundColor = "transparent";
-    headerNav.style.borderBottom  = "0px";
+    headerNav.forEach((elem) => {
+      elem.style.borderBottom  = "0px";
+    })
+
   }
 })
 
 
-
-
-
-
 //jQuery to switch logic and place
-// $(document).ready(function() {
-//     $.fancybox.defaults.hash = false;
-//   });
-// const options = {
-//     Hash: false,
-//   };
+$(document).ready(function() {
+    $.fancybox.defaults.hash = false;
+  });
+const options = {
+    Hash: false,
+  };

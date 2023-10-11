@@ -34,5 +34,13 @@ body {
         }
       }
     }
+    .social-media {
+      a {
+        @apply flex items-center h-full;
+        &:hover {
+          @apply bg-red rounded-3xl;
+        }
+      }
+    }
   }
 }

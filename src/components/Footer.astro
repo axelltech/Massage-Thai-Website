@@ -1,9 +1,5 @@
 ---
-import { Icon } from 'astro-icon';
-import { Image } from "astro:assets";
-import facebook from "../img/facebook.png";
-import instagram from "../img/instagram.png";
-import whatsapp from "../img/whatsapp.png";
+import SocialMedia from './SocialMedia.astro';
 ---
 
 <footer class="text-white-main mt-[300px]">
@@ -23,16 +19,15 @@ import whatsapp from "../img/whatsapp.png";
             <div>
               <p>Duminică - Miercuri: <span class="ml-2">11:00 - 16:00 PM</span></p>
               <p>Joi - Sambată: <span class="ml-2">12:00 - 19:00 PM</span></p>
-                <div class="social-media font-semibold flex flex-wrap mt-2 gap-5 scale-[0.9] ml-[-18px] mb-2">
-                  <!-- <Icon name="mdi:room" /> -->
+                <!-- <div class="social-media font-semibold flex flex-wrap mt-2 gap-5 scale-[0.9] ml-[-18px] mb-2">
                   <a target="_blank" href="https://www.facebook.com/profile.php?id=100094104620583">
                     <Image src={facebook} alt="facebook" width="50" height="50"/>
                   </a>
                   <a target="_blank" href="https://instagram.com/thaisensation18?igshid=MzRlODBiNWFlZA==" class="p-[2px]">
                     <Image src={instagram} alt="instagram" width="49" height="49"/>
                   </a>
-                  <!-- <Image src={whatsapp} alt="whatsapp" width="50" height="50"/> -->
-                </div>
+                </div> -->
+                <SocialMedia/>
             </div>
           </div>
           <hr class="bottom-foot-col"/>
@@ -84,10 +79,10 @@ import whatsapp from "../img/whatsapp.png";
           <div>
             <ul>
               <li>
-                <a>0755054654</a>
+                <a href="tel:0755054654">0755054654</a>
             </li>
             <li>
-                <a>office.thaisenzation@gmail.com</a>
+                <a href="mailto:office.thaisenzation@gmail.com">office.thaisenzation@gmail.com</a>
             </li>
               </ul>
             </div>
