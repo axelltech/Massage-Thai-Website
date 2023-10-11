@@ -8,7 +8,15 @@ export default defineConfig({
   // https://github.com/axelltech/Massage-Thai-Website
   integrations: [
     tailwind({
-      configFile: "./postcss.config.cjs",
+      // configFile: "./postcss.config.cjs",
     }),
   ],
+  styles: {
+    content: [
+      './src/**/*.html',
+      './src/**/*.astro',
+      './src/styles/**/*.css', // Adăugați aici calea către fișierele CSS
+    ],
+  },
 });
+
