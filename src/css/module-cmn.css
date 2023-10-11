@@ -1,14 +1,14 @@
 .content-cmn-sec {
-    @apply flex flex-col items-center;
-    .content-bottom-sec {
-      hr {
-        @apply opacity-60;
-      }
-      .text-content-sec {
-        @apply my-12 lg:max-w-[700px];
-        p {
-          @apply my-5;
-        }
+  @apply flex flex-col items-center;
+  .content-bottom-sec {
+    hr {
+      @apply opacity-60;
+    }
+    .text-content-sec {
+      @apply my-12 lg:max-w-[700px];
+      p {
+        @apply my-5;
       }
     }
   }
+}
