@@ -2,7 +2,7 @@
   @apply flex flex-col items-center;
   .content-bottom-sec {
     hr {
-      @apply opacity-60;
+      @apply opacity-40;
     }
     .text-content-sec {
       @apply my-12 lg:max-w-[700px];
