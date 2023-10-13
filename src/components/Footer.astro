@@ -19,14 +19,6 @@ import SocialMedia from './SocialMedia.astro';
             <div>
               <p>Duminică - Miercuri: <span class="ml-2">11:00 - 16:00 PM</span></p>
               <p>Joi - Sambată: <span class="ml-2">12:00 - 19:00 PM</span></p>
-                <!-- <div class="social-media font-semibold flex flex-wrap mt-2 gap-5 scale-[0.9] ml-[-18px] mb-2">
-                  <a target="_blank" href="https://www.facebook.com/profile.php?id=100094104620583">
-                    <Image src={facebook} alt="facebook" width="50" height="50"/>
-                  </a>
-                  <a target="_blank" href="https://instagram.com/thaisensation18?igshid=MzRlODBiNWFlZA==" class="p-[2px]">
-                    <Image src={instagram} alt="instagram" width="49" height="49"/>
-                  </a>
-                </div> -->
                 <SocialMedia/>
             </div>
           </div>
@@ -39,14 +31,14 @@ import SocialMedia from './SocialMedia.astro';
           </div>
           <div>
             <ul>
-              <li><a href="/" data-after="Acasa">Acasă</a></li>
-              <li><a href="/preturi" data-after="Preturi">Prețuri</a></li>
-              <li><a href="/galerie" data-after="Galerie">Galerie</a></li>
+              <li><a href="/Massage-Thai-Website" data-after="Acasa">Acasă</a></li>
+              <li><a href="/Massage-Thai-Website/preturi" data-after="Preturi">Prețuri</a></li>
+              <li><a href="/Massage-Thai-Website/galerie" data-after="Galerie">Galerie</a></li>
               <li>
-                <a href="/regulament" data-after="Regulament">Regulament</a>
+                <a href="/Massage-Thai-Website/regulament" data-after="Regulament">Regulament</a>
               </li>
-              <li><a href="/about" data-after="Despre">Despre noi</a></li>
-              <li><a href="/contact" data-after="Contact">Contact</a></li>
+              <li><a href="/Massage-Thai-Website/about" data-after="Despre">Despre noi</a></li>
+              <li><a href="/Massage-Thai-Website/contact" data-after="Contact">Contact</a></li>
             </ul>
           </div>
           <hr class="bottom-foot-col"/>
@@ -59,13 +51,13 @@ import SocialMedia from './SocialMedia.astro';
           <div>
             <ul>
                 <li>
-                    <a href="/termeni-conditii">Termeni și condiții</a>
+                    <a href="/Massage-Thai-Website/termeni-conditii">Termeni și condiții</a>
                 </li>
                 <li>
-                    <a href="/politica-cookies">Politică cookies</a>
+                    <a href="/Massage-Thai-Website/politica-cookies">Politică cookies</a>
                 </li>
                 <li>
-                    <a href="/politica-confidentialitate">Politică de confidențialitate</a>
+                    <a href="/Massage-Thai-Website/politica-confidentialitate">Politică de confidențialitate</a>
                 </li>
           <hr class="bottom-foot-col"/>
           </ul>
@@ -78,10 +70,16 @@ import SocialMedia from './SocialMedia.astro';
           </div>
           <div>
             <ul>
-              <li>
+              <li class="flex items-center">
+                <img src="../src/img/phone.png" alt="" class="w-7 mr-2">
                 <a href="tel:0755054654">0755054654</a>
             </li>
-            <li>
+            <li class="flex items-center">
+              <img src="../src/img/location.png" alt="" class="w-7 mr-2">
+              <a href="https://www.google.com/maps/place/Strada+Ion+Andreescu+18,+Cluj-Napoca+400638/@46.7737559,23.5702483,17z/data=!3m1!4b1!4m6!3m5!1s0x47490e91bc499b91:0x88d6e8262b9fa3a7!8m2!3d46.7737559!4d23.5728286!16s%2Fg%2F11j34nnk24?entry=ttu" target="_blank">Strada Ion Andreescu 18</a>
+            </li>
+            <li class="flex items-center">
+              <img src="../src/img/email.png" alt="" class="w-7 mr-2">
                 <a href="mailto:office.thaisenzation@gmail.com">office.thaisenzation@gmail.com</a>
             </li>
               </ul>

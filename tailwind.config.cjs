@@ -22,6 +22,7 @@ module.exports = {
       "black-main": "#000000",
       "red": "#b70000",
       "white-main": "#FAFAF9",
+      "custom": "#d4af37",
       green: {
         400: "#9b0026",
       },
