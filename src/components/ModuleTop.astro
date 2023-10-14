@@ -4,17 +4,15 @@ interface Props {
 }
 
 const { title } = Astro.props;
-// import { Image } from "astro:assets";
 ---
 
 <div
-  class="module-top flex flex-wrap items-center justify-center h-[200px] mt-[50px] mb-[5px]"
+  class="module-top flex flex-wrap items-center justify-center h-[200px] mt-[93px] mb-[25px]"
 >
   <div class="flex text-center items-center relative">
-    <!-- <Image src={image} alt="ALEX" width="1440" height="440" -->
-    <!-- /> -->
-    <h2 class="text-[50px] uppercase w-full flex items-center justify-center">
+    <h2 class="block uppercase font-semibold relative w-fit animate-textreveal">
       {title}
+      <span class="absolute top-0 left-0 h-full w-0 bg-red animate-textrevealbox"></span>
     </h2>
   </div>
 </div>

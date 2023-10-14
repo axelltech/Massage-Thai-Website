@@ -7,7 +7,7 @@ body {
   .content {
     @apply mx-auto max-w-[1200px] px-6 relative;
     h2 {
-      @apply text-[50px] text-red;
+      @apply text-[40px];
     }
     h3 {
       @apply text-xl font-medium uppercase;
@@ -17,6 +17,18 @@ body {
     }
   }
 }
+
+@screen md-media {
+  body {
+    .content {
+      h2 {
+        @apply text-[50px];
+      }
+    }
+  }
+
+}
+
 
 @screen lg-media {
   body {

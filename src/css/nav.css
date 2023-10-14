@@ -60,7 +60,7 @@
           a {
             &::after {
               @apply content-[attr(data-after)] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-0 text-redy-400 text-[100px] tracking-[50px] z-[-1];
-              transition: 0.3s ease letter-spacing;
+              transition: 0.5s ease letter-spacing;
             }
           }
           li {

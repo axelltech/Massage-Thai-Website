@@ -27,3 +27,22 @@
     transform: rotateZ(180deg);
   }
 }
+
+/* .title-main {
+  .module-top {
+    @apply mt-0;
+    h2{
+      color: transparent;
+      span {
+        @apply text-white-main;
+      }
+      &.animate-textreveal {
+        @apply !text-white-main;
+      }
+    }
+  }
+} */
+
+.title-main {
+    color: transparent;
+}

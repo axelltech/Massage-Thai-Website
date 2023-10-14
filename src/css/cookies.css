@@ -1,7 +1,0 @@
-.wrapper {
-  @apply fixed max-w-[345px] w-full bg-white-main rounded-md p-5 text-red bottom-[50px] right-[-370px] transition-all;
-  transition: right 0.5 ease;
-  &.show {
-    @apply right-5;
-  }
-}

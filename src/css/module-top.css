@@ -1,8 +1,9 @@
 .module-top {
-  img {
-    @apply w-[1200px] h-[440px] object-cover;
-  }
   h2 {
-    @apply text-white-main;
+    color: transparent;
+    animation-delay: 1s;
+    span {
+      animation-delay: 0.5s;
+    }
   }
 }

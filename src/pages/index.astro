@@ -1,23 +1,26 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
 import Slider from '../components/Slider.astro';
-import Cookies from '../components/Cookies.astro';
 import ModuleCMN from '../components/ModuleCMN.astro';
+import ModuleTop from '../components/ModuleTop.astro';
 ---
 
 <MainLayout title="Thai Massage Home">
 	
 		<div class="mt-[120px] flex flex-col items-center w-full">
 			<Slider/>
-			<Cookies/>
 			<div>
 				<a href="/Massage-Thai-Website/preturi" class="uppercase bg-red p-4 block w-max rounded-xl font-semibold hover:text-black-main mt-10 text-lg">
 					Listă prețuri
 				</a>
 			</div>
-			<div class="text-[40px] lg:text-[80px] mb-[120px] mt-[40px] font-semibold">
+			<h4 class="title-main text-[40px] lg:!text-[80px] my-10 md:mb-[80px] font-semibold block animate-textrevealmain w-fit relative">
+				<span class="absolute top-0 left-0 h-full w-0 bg-red animate-textrevealbox"></span>
 				THAI SENZATION
-			</div>
+			</h4>
+			<!-- <div class="title-main">
+				<ModuleTop title="Thai Sensation"/>
+			</div> -->
 			<div class="content-cmn-sec">
 				<ModuleCMN
 				content="THAI SENSATION este primul și singurul masaj erotic din Cluj-Napoca, în care maseuzele sunt chiar din țara lor de origine, Thailanda."

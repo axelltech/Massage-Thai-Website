@@ -55,11 +55,34 @@ module.exports = {
 			"100%": {
 				transform: "translateX(calc(-504px * 5))",
 			}
-		}
+		},
+    text_reveal_box: {
+      "50%": {
+        width: "100%",
+        left: "0"
+      },
+      "100%": {
+        width: "0",
+        left: "100%"
+      }
+    },
+    text_reveal: {
+      "100%": {
+        color: "#b70000"
+      }
+    },
+    text_reveal_main: {
+      "100%": {
+        color: "#FAFAF9"
+      }
+    }
       },
       animation: {
         pulse: "pulse 1s ease infinite",
 		    scroll: "scroll 40s linear infinite",
+        textrevealbox: "text_reveal_box 1s ease",
+        textreveal: "text_reveal 0.5s ease forwards",
+        textrevealmain: "text_reveal_main 0.5s ease  forwards"
       },
 	  backgroundImage: {
         'price-bg': "url('../src/img/photoFive.jpeg')",

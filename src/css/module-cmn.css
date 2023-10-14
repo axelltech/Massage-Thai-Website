@@ -5,9 +5,19 @@
       @apply opacity-40;
     }
     .text-content-sec {
-      @apply my-12 lg:max-w-[700px];
+      @apply my-10 max-w-[691px];
       p {
         @apply my-5;
+      }
+    }
+  }
+}
+
+@screen md-media {
+  .content-cmn-sec {
+    .content-bottom-sec {
+      .text-content-sec {
+        /* @apply max-w-[700px]; */
       }
     }
   }
