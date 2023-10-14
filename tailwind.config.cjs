@@ -23,10 +23,11 @@ module.exports = {
       "red": "#b70000",
       "white-main": "#FAFAF9",
       "custom": "#d4af37",
-      green: {
-        400: "#9b0026",
+      redy: {
+        400: "#6c001a",
       },
-      "transparenta": "rgba(0, 0, 255, 0)"
+      "modal": "rgba(0, 0, 0, 0.9);",
+      "green": "#38af48"
     },
     fontFamily: {
       montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],

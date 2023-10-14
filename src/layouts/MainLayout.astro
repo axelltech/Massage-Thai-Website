@@ -2,6 +2,7 @@
 import "../styles/styles.css";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import AgeGate from "../components/AgeGate.astro";
 
 interface Props {
   title: string;
@@ -29,7 +30,8 @@ const { title } = Astro.props;
   </head>
   <body>
     <Header />
-    <main class="content">
+    <AgeGate/>
+    <main id="mainContent" class="!hidden content">
       <slot>
         <!-- <slot class="content"> Page in progress</slot> -->
       </slot>

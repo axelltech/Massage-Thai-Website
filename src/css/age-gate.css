@@ -1,0 +1,17 @@
+.modal-open {
+    overflow: hidden;
+    height: 100vh;
+}
+
+.modal {
+    @apply flex;
+    .modal-content {
+        transform: translate(-50%, -50%);
+            h2 {
+                @apply text-white-main text-3xl font-medium opacity-90;
+            }
+        .bttn-age {
+            @apply  uppercase font-semibold flex text-lg items-center gap-1 rounded-3xl pr-3 cursor-pointer;
+        }
+    }
+}

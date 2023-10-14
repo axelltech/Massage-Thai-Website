@@ -59,7 +59,7 @@
         ul {
           a {
             &::after {
-              @apply content-[attr(data-after)] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-0 text-green-400 text-[100px] tracking-[50px] z-[-1];
+              @apply content-[attr(data-after)] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-0 text-redy-400 text-[100px] tracking-[50px] z-[-1];
               transition: 0.3s ease letter-spacing;
             }
           }
@@ -89,7 +89,7 @@
           @apply static block h-auto w-fit;
           a {
             &::after {
-              @apply content-[attr(data-after)] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-0 text-green-400 text-[100px] tracking-[50px] z-[-1];
+              @apply content-[attr(data-after)] absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] scale-0 text-redy-400 text-[100px] tracking-[50px] z-[-1];
               transition: 0.3s ease letter-spacing;
             }
           }

@@ -1,0 +1,35 @@
+---
+import logo from "../img/thai-sensation-logo.png";
+import { Image } from "astro:assets";
+import tick from "../img/tick-bttn.png";
+import close from "../img/close-bttn.png";
+---
+
+<div
+  id="ageModal"
+  class="modal hidden absolute inset-0 w-full h-full bg-modal z-[1000]  items-center justify-center"
+>
+  <div
+    class="modal-content text-white-main absolute top-1/2 left-1/2 w-[90%] bg-redy-400 max-w-[400px] rounded-2xl mx-auto p-4 text-center flex flex-wrap flex-col items-center"
+  >
+    <Image src={logo} alt="logo" width="126" height="200" />
+    <h2 class="my-3">Verificarea vârstei</h2>
+    <p class="opacity-70">
+      Site ul contine materiale destinate exclusiv persoanelor adulte si poate
+      include imagini sau continut explicit. Utilizarea site-ului implica
+      acceptarea acestui continut si confirmarea ca aveli vârsta legala
+    </p>
+    <h4 class="text-3xl uppercase font-medium my-4 italic">Aveți peste 18 ani?</h4>
+    <div class="flex gap-4 mb-5">
+      <div class="bg-white-main bttn-age text-black-main" id="yesButton">
+        <Image src={tick} alt="logo" width="33" height="40" />
+        <p>Da</p>
+      </div>
+      <div class="bg-black-main bttn-age" id="noButton">
+        <Image src={close} alt="logo" width="33" height="40" />
+        <p>Nu</p>
+      </div>
+    </div>
+    <p class="text-sm opacity-80"><span>©</span>Thai Sensation 2023</p>
+  </div>
+</div>
