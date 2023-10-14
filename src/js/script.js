@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('mainContent').style.display = 'block'; // Afiseaza continutul principal
   } else {
       // Daca utilizatorul nu a dat un raspuns inainte, afiseaza modalul
-      ageModal.style.display = 'block';
+      ageModal.setAttribute('style', 'display:block !important');
       document.body.classList.add('modal-open'); // Adauga clasa pentru dezactivarea scroll-ului
     }
     

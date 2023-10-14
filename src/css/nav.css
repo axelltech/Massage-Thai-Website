@@ -45,7 +45,7 @@
           }
         }
         &.active {
-          @apply left-0 bg-black-main opacity-90;
+          @apply left-0 bg-black-main opacity-100;
         }
       }
     }
@@ -71,6 +71,9 @@
                 }
               }
             }
+          }
+          &.active {
+            @apply bg-gray-500;
           }
         }
       }
