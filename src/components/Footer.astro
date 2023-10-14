@@ -1,15 +1,16 @@
 ---
-// import SocialMedia from './SocialMedia.astro';
+import { Image } from "astro:assets";
 import facebook from "../img/facebook.png";
 import instagram from "../img/instagram.png";
-import { Image } from "astro:assets";
+import phone from "../img/phone.png";
+import email from "../img/email.png";
+import location from "../img/location.png";
 ---
 
-<footer class="text-white-main mt-[300px]">
-    <div class="footer-content flex flex-col content">
+<footer class="text-white-main bg-gray-500">
+    <div class="footer-content flex flex-col content lg:pt-8 pb-2">
       <div class="foot-content-top">
-  
-        <div class="footer-column">
+        <div class="footer-column lg:mb-6">
           <div class="title-foot-col">
             <h5>Informații utile</h5>
             <hr/>
@@ -49,32 +50,28 @@ import { Image } from "astro:assets";
             </div>
         </div>
         <div class="footer-column lg:max-w-[305px]">
-          <div>
             <div class="title-foot-col">
               <h5 class="uppercase font-semibold" >Program</h5>
               <hr/>
             </div>
-            <div>
-              <p>Duminică - Miercuri: 
-                <span class="ml-2">11:00 - 16:00 PM</span></p>
-              <p>Joi - Sambată: <span class="ml-2">12:00 - 19:00 PM</span></p>
+              <div>
+                <p>Duminică - Miercuri: 
+                  <span class="ml-2">11:00 - 16:00 PM</span></p>
+                <p>Joi - Sambată: <span class="ml-2">12:00 - 19:00 PM</span></p>
+              </div>
               <hr class="bottom-foot-col mb-[26px]"/>
-              <div class="title-foot-col">
-                <h5 class="uppercase font-semibold" >Social</h5>
-                <hr/>
+                <div class="title-foot-col">
+                  <h5 class="uppercase font-semibold" >Social</h5>
+                  <hr/>
+                </div>
+                <div class="social-media font-semibold flex flex-wrap mt-2 gap-2 scale-[0.9] mb-2 relative right-[6%]">
+                  <a target="_blank" href="https://www.facebook.com/profile.php?id=100094104620583">
+                    <Image src={facebook} alt="facebook" width="39" height="49"/>
+                  </a>
+                  <a target="_blank" href="https://instagram.com/thaisensation18?igshid=MzRlODBiNWFlZA==" class="p-[1px]">
+                    <Image src={instagram} alt="instagram" width="39" height="49"/>
+                  </a>
               </div>
-              <div class="social-media font-semibold flex flex-wrap mt-2 gap-5 scale-[0.9] ml-[-18px] mb-2">
-                <!-- <Icon name="mdi:room" /> -->
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=100094104620583">
-                  <Image src={facebook} alt="facebook" width="40" height="50"/>
-                </a>
-                <a target="_blank" href="https://instagram.com/thaisensation18?igshid=MzRlODBiNWFlZA==" class="p-[2px]">
-                  <Image src={instagram} alt="instagram" width="39" height="49"/>
-                </a>
-                <!-- <Image src={whatsapp} alt="whatsapp" width="50" height="50"/> -->
-              </div>
-            </div>
-          </div>
           <hr class="bottom-foot-col"/>
         </div>
         <div class="footer-column">
@@ -85,15 +82,16 @@ import { Image } from "astro:assets";
           <div>
             <ul>
               <li class="flex items-center">
-                <img src="../src/img/phone.png" alt="" class="w-7 mr-2">
+                <Image src={phone} alt="phone" width="28" height="28" />
+                <!-- <img src={phone} alt="" class="w-7 mr-2"> -->
                 <a href="tel:0755054654">0755054654</a>
             </li>
             <li class="flex items-center">
-              <img src="../src/img/location.png" alt="" class="w-7 mr-2">
+              <Image src={location} alt="location" width="28" height="28"/>
               <a href="https://www.google.com/maps/place/Strada+Ion+Andreescu+18,+Cluj-Napoca+400638/@46.7737559,23.5702483,17z/data=!3m1!4b1!4m6!3m5!1s0x47490e91bc499b91:0x88d6e8262b9fa3a7!8m2!3d46.7737559!4d23.5728286!16s%2Fg%2F11j34nnk24?entry=ttu" target="_blank">Strada Ion Andreescu 18</a>
             </li>
             <li class="flex items-center">
-              <img src="../src/img/email.png" alt="" class="w-7 mr-2">
+              <Image src={email} alt="email" width="28" height="28"/>
                 <a href="mailto:office.thaisenzation@gmail.com">office.thaisenzation@gmail.com</a>
             </li>
               </ul>

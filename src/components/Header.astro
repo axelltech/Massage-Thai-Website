@@ -1,20 +1,21 @@
 ---
 import logo from '../img/thai-sensation-logo.png';
 import { Image } from "astro:assets";
-import SocialMedia from './SocialMedia.astro';
+import facebook from "../img/facebook.png";
+import instagram from "../img/instagram.png";
 ---
 <header
-  class="fixed z-[1000] top-0 left-0 w-screen h-auto"
+  class="fixed z-[1000] top-0 left-0 w-screen h-auto bg-gray-500"
   id="header"
 >
-  <div class="header content flex items-center flex-wrap justify-between lg:justify-normal lg:flex-nowrap bg-black-main">
+  <div class="header content flex items-center flex-wrap justify-between lg:justify-normal lg:flex-nowrap">
     <div class="nav-content brand pt-2 pb-3">
       <a class="uppercase text-white-main text-lg font-semibold" href="/Massage-Thai-Website"
         ><Image src={logo} alt="logo" width="106" height="200"></a
       >
     </div>
     <div class="nav-content lg:justify-center lg:flex block flex-wrap justify-center lg:w-[96%]">
-      <div class="additional-info hidden lg:flex items-center text-xs h-[50px] mb-[10px]">
+      <div class="additional-info hidden lg:flex items-center text-xs h-[50px] mb-[10px] text-gray-200">
         <div class="flex gap-3">
           <ul class="flex gap-3">
             <li>
@@ -31,8 +32,15 @@ import SocialMedia from './SocialMedia.astro';
           <p class="uppercase">Joi - Sambată:<span class="ml-2">12:00 - 19:00 PM</span></p>
           <div class="rounded-full"></div>
         </div>
-        <div class="scale-[0.6]">
-          <SocialMedia/>
+        <div class="scale-[0.6] opacity-80">
+          <div class="social-media font-semibold flex flex-wrap mt-2 gap-4 scale-[0.9] ml-[-18px] mb-2">
+            <a target="_blank" href="https://www.facebook.com/profile.php?id=100094104620583">
+              <Image src={facebook} alt="facebook" width="40" height="50"/>
+            </a>
+            <a target="_blank" href="https://instagram.com/thaisensation18?igshid=MzRlODBiNWFlZA==" class="p-[2px]">
+              <Image src={instagram} alt="instagram" width="39" height="49"/>
+            </a>
+          </div>
         </div>
         <hr class="block mt-5 h-[1px]">
     </div>
@@ -48,7 +56,7 @@ import SocialMedia from './SocialMedia.astro';
             <div class="bar h-[2px] w-[30px] relative bg-white-main z-[-1]"></div>
           </div>
           <ul
-            class="list-none absolute w-screen h-screen left-full top-0 flex items-center flex-col z-[1] justify-center over overflow-x-hidden bg-black-main opacity-90"
+            class="list-none absolute w-screen h-screen left-full top-0 flex items-center flex-col z-[1] justify-center over overflow-x-hidden opacity-90"
           >
             <li><a href="/Massage-Thai-Website" data-after="Acasa">Acasă</a></li>
             <li><a href="/Massage-Thai-Website/preturi" data-after="Preturi">Prețuri</a></li>

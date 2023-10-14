@@ -27,7 +27,11 @@ module.exports = {
         400: "#6c001a",
       },
       "modal": "rgba(0, 0, 0, 0.9);",
-      "green": "#38af48"
+      "green": "#38af48",
+      gray: {
+        200: "#b9b9ba",
+        500: "#171619"
+      }
     },
     fontFamily: {
       montserrat: ["Montserrat", ...defaultTheme.fontFamily.sans],

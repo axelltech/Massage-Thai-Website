@@ -20,6 +20,8 @@ body {
 
 @screen lg-media {
   body {
+    @apply grid min-h-[100vh];
+    grid-template-rows: 1fr auto;
     ul {
       a {
         @apply relative py-1;
@@ -35,12 +37,12 @@ body {
       }
     }
     .social-media {
-      a {
-        @apply flex items-center h-full;
-        &:hover {
-          @apply bg-red rounded-3xl;
+        a {
+          @apply flex items-center h-full;
+          &:hover {
+            @apply bg-red rounded-3xl;
+          }
         }
-      }
     }
   }
 }

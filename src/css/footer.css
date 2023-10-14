@@ -7,11 +7,6 @@
       h5 {
         @apply font-semibold uppercase text-lg leading-none mb-[6px];
       }
-      .social-media {
-        div {
-          /* @apply mr-3 underline; */
-        }
-      }
       .title-foot-col {
         @apply w-max mb-3 mt-8;
         hr {
@@ -20,13 +15,15 @@
       }
       div {
         ul li {
-          @apply my-3;
+          @apply my-3 gap-3;
+          img {
+          }
         }
       }
     }
   }
   .foot-content-bottom {
-    @apply mt-8 mb-5 text-xs;
+    @apply mt-8 text-xs;
   }
   .bottom-foot-col {
     @apply mt-2 opacity-[0.5];
