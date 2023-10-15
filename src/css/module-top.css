@@ -1,9 +1,10 @@
 .module-top {
-  h2 {
-    color: transparent;
-    animation-delay: 1s;
-    span {
-      animation-delay: 0.5s;
+    h2 {
+      @apply block uppercase font-semibold relative w-fit animate-textreveal;
+      color: transparent;
+      animation-delay: 1s;
+      span {
+        animation-delay: 0.5s;
+      }
     }
   }
-}

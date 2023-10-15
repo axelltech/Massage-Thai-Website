@@ -5,7 +5,6 @@ const hamburger = document.querySelector(
 const mobileMenu = document.querySelector(".header .nav-bar .nav-list ul");
 const header = document.querySelector(".header.content");
 const headerNav = document.querySelectorAll(".nav-content");
-const cookieBox = document.querySelector(".wrapper");
 const buttons = document.querySelectorAll(".button");
 
 hamburger.addEventListener("click", () => {
@@ -13,19 +12,6 @@ hamburger.addEventListener("click", () => {
   mobileMenu.classList.toggle("active");
 });
 
-const executeCodes = () => {
-  if (document.cookie.includes("codingPosii")) return;
-  cookieBox.classList.add("show");
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      cookieBox.classList.remove("show");
-      if (button.id == "acceptBtn") {
-        document.cookie = "cookieBy= codingPosii; max-age=" + 60 * 60 * 24 * 30;
-      } else {
-      }
-    });
-  });
-};
 
 window.addEventListener("load", executeCodes);
 

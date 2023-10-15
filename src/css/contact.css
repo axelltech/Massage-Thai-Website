@@ -1,0 +1,49 @@
+.contact-content {
+  .map {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    img {
+      filter: hue-rotate(180deg) !important;
+    }
+  }
+  .content-bottom-sec {
+    hr {
+      @apply hidden;
+    }
+    .text-content-sec {
+      p {
+        @apply absolute;
+      }
+      @apply flex justify-between;
+      .contact-column {
+        @apply flex flex-col items-center text-center;
+        ul {
+          li {
+            @apply flex items-center justify-center;
+            a {
+              &:hover {
+                @apply transition-none;
+              }
+              &::before {
+                @apply transition-none bg-opacity-0;
+              }
+            }
+            img {
+                @apply mr-2;
+            }
+          }
+        }
+        .title-cmn {
+            hr {
+                @apply block opacity-100;
+            }
+        }
+      }
+    }
+  }
+  /* iframe { */
+  /* border-radius: 20px; */
+  /* } */
+}

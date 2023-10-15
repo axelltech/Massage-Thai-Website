@@ -7,12 +7,14 @@ const { title } = Astro.props;
 ---
 
 <div
-  class="module-top flex flex-wrap items-center justify-center h-[200px] mt-[93px] mb-[25px]"
+  class="module-top flex flex-wrap items-center justify-center mt-[133px] mb-[70px]"
 >
   <div class="flex text-center items-center relative">
-    <h2 class="block uppercase font-semibold relative w-fit animate-textreveal">
+    <h2 class="">
       {title}
-      <span class="absolute top-0 left-0 h-full w-0 bg-red animate-textrevealbox"></span>
+      <span
+        class="absolute top-0 left-0 h-full w-0 bg-red animate-textrevealbox"
+      ></span>
     </h2>
   </div>
 </div>

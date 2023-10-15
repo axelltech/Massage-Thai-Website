@@ -12,6 +12,9 @@ body {
     h3 {
       @apply text-xl font-medium uppercase;
     }
+    h4 {
+      @apply uppercase;
+    }
     h5 {
       @apply font-medium uppercase;
     }
