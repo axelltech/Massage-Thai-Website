@@ -26,9 +26,6 @@
               &:hover {
                 @apply transition-none;
               }
-              &::before {
-                @apply transition-none bg-opacity-0;
-              }
             }
             img {
                 @apply mr-2;
