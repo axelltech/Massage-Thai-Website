@@ -11,16 +11,16 @@ import photoSeven from "../img/photoSeven.jpg";
 import { Image } from "astro:assets";
 ---
 
-<MainLayout title="Thai Massage Contact">
+<MainLayout title="Galerie | Thai Sensation">
             <ModuleTop title="Galerie"/>
                 <div class="gallery-photos">
                             <div>
-                                <a href="../dist/img/photoFour.jpeg" data-fancybox="gallery" data-slug="cat">
-                                        <Image src={photoFour} alt="photoFour" width="700" height="370" />
+                                <a href="/photoFour.jpeg" class="fancybox" data-fancybox="gallery">
+                                        <Image src={photoFour} alt="photoFour" width="700" height="370"/>
                                 </a>
                             </div>
                             <div class="v-stretch">
-                                <a href="../src/img/photoOne.jpeg" class="fancybox" data-fancybox="gallery">
+                                <a href="/src/img/photoOne.jpeg" class="fancybox" data-fancybox="gallery">
                                         <Image src={photoOne} alt="photoOne" width="700" height="270" />
                                     </a>
                                 </div>
