@@ -1,35 +1,38 @@
 ---
-import MainLayout from '../layouts/MainLayout.astro';
-import Slider from '../components/Slider.astro';
-import ModuleCMN from '../components/ModuleCMN.astro';
-import ModuleTop from '../components/ModuleTop.astro';
+import MainLayout from "../layouts/MainLayout.astro";
+import Slider from "../components/Slider.astro";
+import ModuleCMN from "../components/ModuleCMN.astro";
+import ModuleTop from "../components/ModuleTop.astro";
 ---
 
 <MainLayout title="Thai Sensation">
-		<div class="mt-[100px] flex flex-col items-center w-full">
-			<Slider/>
-			<div>
-				<a href="/" class="uppercase bg-red p-4 block w-max rounded-xl font-semibold hover:text-black-main mt-[45px] text-lg">
-					Listă prețuri
-				</a>
-			</div>
-			<div class="title-main">
-				<ModuleTop title="Thai Sensation"/>
-			</div>
-			<div class="content-cmn-sec">
-				<ModuleCMN
-				content="THAI SENSATION este primul și singurul masaj erotic din Cluj-Napoca, în care maseuzele sunt chiar din țara lor de origine, Thailanda."
-			  >
-				<p>
-				  Astfel, au o pregătire și un certificat de maseuză thailandeză. Vrem ca
-				  TU să vii cu mare încredere și noi îți vom garanta că vei gusta din masajul
-				  thailandez erotic unde te vei simți foarte relaxat, calm și distins
-				  exact ca în vise.
-				</p>
-				<p>
-				  Recomand cu mare încredere masajul thailandez erotic și o să fiți super
-				  satisfacut și implinit după un masaj senzual erotic thailandez.
-				</p>
-			</div>
-		</div>
+  <div class="mt-[114px] lg:mt-[117px] flex flex-col items-center w-full">
+    <Slider />
+    <div>
+      <a
+        href="/preturi"
+        class="uppercase bg-red p-4 block w-max rounded-xl font-semibold hover:text-black-main mt-[45px] text-lg"
+      >
+        Listă prețuri
+      </a>
+    </div>
+    <div class="title-main">
+      <ModuleTop title="Thai Sensation" />
+    </div>
+    <div class="content-cmn-sec">
+      <ModuleCMN
+        content="THAI SENSATION este unicul salon din Cluj-Napoca unde maseuzele sunt chiar originare din Thailanda."
+      >
+        <p>
+          Astfel, au pregătire și certificat de maseuză thailandeză. Vrem ca TU
+          să vii cu mare încredere, iar noi îți vom garanta că vei fi gusta din
+          masajul thailandez erotic și că te vei simți foarte relexat și calm,
+          exact ca în vise.
+        </p>
+        <p>
+          Recomand cu mare încredere masajul thailandez erotic și o să fiți cu adevărat satisfăcut și împlinit. 
+        </p>
+      </ModuleCMN>
+    </div>
+  </div>
 </MainLayout>

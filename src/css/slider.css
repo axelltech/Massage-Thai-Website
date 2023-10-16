@@ -41,3 +41,16 @@
       }
     }
 }
+
+.termeni-conditii {
+  p {
+    @apply text-xl text-center font-medium;
+  }
+  ul {
+    li {
+      &::marker {
+        @apply text-red text-xl;
+      }
+    }
+  }
+}

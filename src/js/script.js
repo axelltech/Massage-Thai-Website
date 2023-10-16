@@ -1,3 +1,27 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const ageModal = document.getElementById('ageModal');
+  const yesButton = document.getElementById('yesButton');
+  const noButton = document.getElementById('noButton');
+
+  if (localStorage.getItem('ageConfirmed') === 'true') {
+      ageModal.style.display = 'none'; 
+      document.getElementById('mainContent').style.display = 'block'; 
+  } else {
+      ageModal.setAttribute('style', 'display:block !important');
+      document.body.classList.add('modal-open');
+    }
+    yesButton.addEventListener('click', function() {
+      ageModal.style.display = 'none'; // 
+      document.getElementById('mainContent').style.display = 'block';
+      localStorage.setItem('ageConfirmed', 'true');
+      document.body.classList.remove('modal-open'); 
+  });
+
+  noButton.addEventListener('click', function() {
+      window.location.href = 'https://www.google.com';
+  });
+});
+
 //navbar
 const hamburger = document.querySelector(
   ".header .nav-bar .nav-list .hamburger"
@@ -46,40 +70,13 @@ window.addEventListener("resize", applyBorder);
 applyBorder();
 
 
-document.addEventListener('DOMContentLoaded', function() {
-  const ageModal = document.getElementById('ageModal');
-  const yesButton = document.getElementById('yesButton');
-  const noButton = document.getElementById('noButton');
-
-  // Verifica daca utilizatorul a dat deja un raspuns inainte
-  if (localStorage.getItem('ageConfirmed') === 'true') {
-      ageModal.style.display = 'none'; // Ascunde modalul
-      document.getElementById('mainContent').style.display = 'block'; // Afiseaza continutul principal
-  } else {
-      // Daca utilizatorul nu a dat un raspuns inainte, afiseaza modalul
-      ageModal.setAttribute('style', 'display:block !important');
-      document.body.classList.add('modal-open'); // Adauga clasa pentru dezactivarea scroll-ului
-    }
-    
-    yesButton.addEventListener('click', function() {
-      ageModal.style.display = 'none'; // Ascunde modalul
-      document.getElementById('mainContent').style.display = 'block'; // Afiseaza continutul principal
-      // Salveaza raspunsul utilizatorului in localStorage
-      localStorage.setItem('ageConfirmed', 'true');
-      document.body.classList.remove('modal-open'); // Elimina clasa pentru reactivarea scroll-ului
-  });
-
-  noButton.addEventListener('click', function() {
-      window.location.href = 'https://www.google.com';
-  });
-});
 
 
 
 //jQuery to switch logic and place
-$(document).ready(function () {
-  $.fancybox.defaults.hash = false;
-});
-const options = {
-  Hash: false,
-};
+// $(document).ready(function () {
+//   $.fancybox.defaults.hash = false;
+// });
+// const options = {
+//   Hash: false,
+// };
