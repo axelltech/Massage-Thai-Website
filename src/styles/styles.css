@@ -1,10 +1,10 @@
 /* Custom components styles */
-@import "../css/nav.css";
-@import "../css/common.css";
-@import "../css/footer.css";
-@import "../css/slider.css";
-@import "../css/module-top.css";
-@import "../css/module-cmn.css";
-@import "../css/gallery.css";
-@import "../css/age-gate.css";
-@import "../css/contact.css";
+@import "/src/css/nav.css";
+@import "/src/css/common.css";
+@import "/src/css/footer.css";
+@import "/src/css/slider.css";
+@import "/src/css/module-top.css";
+@import "/src/css/module-cmn.css";
+@import "/src/css/gallery.css";
+@import "/src/css/age-gate.css";
+@import "/src/css/contact.css";
