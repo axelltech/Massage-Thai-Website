@@ -3,8 +3,7 @@ import { defineConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
-  site: 'https://axelltech.github.io',
-  base: '/Massage-Thai-Website',
+  site: 'https://thaisensation.ro/',
   integrations: [
     tailwind({
       // configFile: "./postcss.config.cjs",

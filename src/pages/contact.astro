@@ -16,6 +16,20 @@ import TitleCMN from "../components/TitleCMN.astro";
             <ModuleTop title="Contact"/>
 			<ModuleCMN content="">
 				<div class="contact-column">
+					<TitleCMN title="Adresa"/>
+					<ul>
+						<li>
+							<Image src={location} alt="location" width="35" height="35"/>
+							<a href="https://www.google.com/maps/place/Strada+Ion+Andreescu+18,+Cluj-Napoca+400638/@46.7737559,23.5702483,17z/data=!3m1!4b1!4m6!3m5!1s0x47490e91bc499b91:0x88d6e8262b9fa3a7!8m2!3d46.7737559!4d23.5728286!16s%2Fg%2F11j34nnk24?entry=ttu" target="_blank">Strada Ion Andreescu 18 
+								<br/>
+								Cluj-Napoca, România</a>
+						  </li>
+					</ul>
+				</div>
+				<div class="md:hidden">
+					<iframe class="map mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.5505041253605!2d23.570253676162537!3d46.77375587112556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490e91bc499b91%3A0x88d6e8262b9fa3a7!2sStrada%20Ion%20Andreescu%2018%2C%20Cluj-Napoca%20400638!5e0!3m2!1sro!2sro!4v1697403386613!5m2!1sro!2sro" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+				</div>
+				<div class="contact-column">
 					<TitleCMN title="Contact"/>
 					<ul>
 						<li>
@@ -29,18 +43,7 @@ import TitleCMN from "../components/TitleCMN.astro";
 						</ul>
 				</div>
 				<div class="contact-column">
-					<TitleCMN title="Adresa"/>
-					<ul>
-						<li>
-							<Image src={location} alt="location" width="35" height="35"/>
-							<a href="https://www.google.com/maps/place/Strada+Ion+Andreescu+18,+Cluj-Napoca+400638/@46.7737559,23.5702483,17z/data=!3m1!4b1!4m6!3m5!1s0x47490e91bc499b91:0x88d6e8262b9fa3a7!8m2!3d46.7737559!4d23.5728286!16s%2Fg%2F11j34nnk24?entry=ttu" target="_blank">Strada Ion Andreescu 18 
-								<br/>
-								Cluj-Napoca, România</a>
-						  </li>
-					</ul>
-				</div>
-				<div class="contact-column">
-					<TitleCMN title="Social"/>
+					<TitleCMN title="Social Media"/>
 					<div class="social-media font-semibold flex flex-wrap mt-2 gap-2 scale-[0.9] mb-2 relative">
 						<a target="_blank" href="https://www.facebook.com/profile.php?id=100094104620583">
 						  <Image src={facebook} alt="facebook" width="39" height="49"/>
@@ -51,8 +54,8 @@ import TitleCMN from "../components/TitleCMN.astro";
 					</div>
 				</div>
 			</ModuleCMN>
-			<!-- <div>
-				<iframe class="map mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.5505041253605!2d23.570253676162537!3d46.77375587112556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490e91bc499b91%3A0x88d6e8262b9fa3a7!2sStrada%20Ion%20Andreescu%2018%2C%20Cluj-Napoca%20400638!5e0!3m2!1sro!2sro!4v1697403386613!5m2!1sro!2sro" width="1152" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-			</div> -->
+			<div>
+				<iframe class="hidden md:block map mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2732.5505041253605!2d23.570253676162537!3d46.77375587112556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47490e91bc499b91%3A0x88d6e8262b9fa3a7!2sStrada%20Ion%20Andreescu%2018%2C%20Cluj-Napoca%20400638!5e0!3m2!1sro!2sro!4v1697403386613!5m2!1sro!2sro" width="100%" height="400px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+			</div>
 		</div>
 </MainLayout>

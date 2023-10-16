@@ -4,19 +4,15 @@ const defaultTheme = require("tailwindcss/defaultTheme");
 module.exports = {
   mode: 'jit',
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
-// content: [
-//     "./dist/**/*.html",
-//     "./dist/**/*.js",
-//   ],
   theme: {
     screens: {
 	  sm: "480px",
       md: "768px",
       lg: "1025px",
-      xl: "1440px",
+      xl: "1200px",
       "lg-media": { raw: "(min-width: 1025px)" },
       "md-media": { raw: "(min-width: 768px)" },
-      "xl-media": { raw: "(min-width: 1440px)" },
+      "xl-media": { raw: "(min-width: 1200px)" },
     },
     colors: {
       "black-main": "#000000",

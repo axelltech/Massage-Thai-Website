@@ -32,7 +32,7 @@
     .module-top {
       @apply my-[40px];
       h2 {
-        @apply animate-textrevealmain md:text-[80px] text-[50px] my-0;
+        @apply animate-textrevealmain md:text-[70px] text-[50px] md:my-5;
         color: transparent;
         animation-delay: 1s;
         span {

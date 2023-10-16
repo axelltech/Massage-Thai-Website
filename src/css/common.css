@@ -3,9 +3,9 @@ html {
 }
 
 body {
-  @apply font-montserrat bg-black-main text-white-main;
+  @apply font-montserrat bg-black-main text-white-main flex flex-col min-h-[100vh];
   .content {
-    @apply mx-auto max-w-[1200px] px-6 relative;
+    @apply px-6 relative flex-1;
     h2 {
       @apply text-[40px];
     }
@@ -18,6 +18,11 @@ body {
     h5 {
       @apply font-medium uppercase;
     }
+    ul {
+      a {
+        @apply py-1;
+      }
+    }
   }
 }
 
@@ -29,17 +34,15 @@ body {
       }
     }
   }
-
 }
 
 
 @screen lg-media {
   body {
-    @apply grid min-h-[100vh];
-    grid-template-rows: 1fr auto;
+    .content {
     ul {
       a {
-        @apply relative py-1;
+        @apply relative;
         &:hover {
           @apply text-red cursor-pointer relative transition-all;
           &::before {
@@ -58,6 +61,15 @@ body {
             @apply bg-red rounded-3xl;
           }
         }
+    }
+  }
+  }
+}
+
+@screen xl-media {
+  body {
+    .content {
+      @apply mx-auto max-w-[1200px];
     }
   }
 }

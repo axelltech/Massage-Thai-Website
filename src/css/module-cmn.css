@@ -5,7 +5,7 @@
       @apply opacity-40;
     }
     .text-content-sec {
-      @apply my-10 max-w-[691px];
+      @apply my-10 max-w-[700px];
       p {
         @apply my-5;
       }
