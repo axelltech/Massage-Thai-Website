@@ -19,7 +19,7 @@ import TitleCMN from "../components/TitleCMN.astro";
 					<TitleCMN title="Adresa"/>
 					<ul>
 						<li>
-							<Image src={location} alt="location" width="35" height="35"/>
+							<Image src={location} alt="location" width="35" height="35" loading="eager"/>
 							<a href="https://www.google.com/maps/place/Strada+Ion+Andreescu+18,+Cluj-Napoca+400638/@46.7737559,23.5702483,17z/data=!3m1!4b1!4m6!3m5!1s0x47490e91bc499b91:0x88d6e8262b9fa3a7!8m2!3d46.7737559!4d23.5728286!16s%2Fg%2F11j34nnk24?entry=ttu" target="_blank">Strada Ion Andreescu 18 
 								<br/>
 								Cluj-Napoca, România</a>
@@ -33,11 +33,11 @@ import TitleCMN from "../components/TitleCMN.astro";
 					<TitleCMN title="Contact"/>
 					<ul>
 						<li>
-						  <Image src={phone} alt="phone" width="30" height="30" />
+						  <Image src={phone} alt="phone" width="30" height="30" loading="eager"/>
 						  <a href="tel:0755054654">0755054654</a>
 					  </li>
 					  <li>
-						<Image src={email} alt="email" width="30" height="30"/>
+						<Image src={email} alt="email" width="30" height="30" loading="eager"/>
 						  <a href="mailto:office.thaisenzation@gmail.com">office.thaisenzation@gmail.com</a>
 					  </li>
 						</ul>
@@ -46,10 +46,10 @@ import TitleCMN from "../components/TitleCMN.astro";
 					<TitleCMN title="Social Media"/>
 					<div class="social-media font-semibold flex flex-wrap mt-2 gap-2 scale-[0.9] mb-2 relative">
 						<a target="_blank" href="https://www.facebook.com/profile.php?id=100094104620583">
-						  <Image src={facebook} alt="facebook" width="39" height="49"/>
+						  <Image src={facebook} alt="facebook" width="39" height="49" loading="eager"/>
 						</a>
 						<a target="_blank" href="https://instagram.com/thaisensation18?igshid=MzRlODBiNWFlZA==" class="p-[1px]">
-						  <Image src={instagram} alt="instagram" width="39" height="49"/>
+						  <Image src={instagram} alt="instagram" width="39" height="49" loading="eager"/>
 						</a>
 					</div>
 				</div>

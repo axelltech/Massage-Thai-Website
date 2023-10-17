@@ -11,7 +11,7 @@ import instagram from "../img/instagram.png";
   <div class="header content flex items-center flex-wrap justify-between lg:justify-normal lg:flex-nowrap">
     <div class="nav-content brand pt-2 pb-3">
       <a class="uppercase text-white-main text-lg font-semibold" href="/"
-        ><Image src={logo} alt="logo" width="120" height="120" class="lg:w-[140px]"></a
+        ><Image src={logo} alt="logo" width="120" height="120" class="lg:w-[140px]" loading="eager"></a
       >
     </div>
     <div class="nav-content lg:justify-center lg:flex block flex-wrap justify-center lg:mr-[37px] lg:ml-[-17px] lg:w-[96%]">
@@ -35,10 +35,10 @@ import instagram from "../img/instagram.png";
         <div class="scale-[0.6] opacity-80">
           <div class="social-media font-semibold flex flex-wrap mt-2 gap-4 scale-[0.9] ml-[-18px] mb-2">
             <a target="_blank" href="https://www.facebook.com/profile.php?id=100094104620583">
-              <Image src={facebook} alt="facebook" width="40" height="50"/>
+              <Image src={facebook} alt="facebook" width="40" height="50" loading="eager"/>
             </a>
             <a target="_blank" href="https://instagram.com/thaisensation18?igshid=MzRlODBiNWFlZA==" class="p-[2px]">
-              <Image src={instagram} alt="instagram" width="39" height="49"/>
+              <Image src={instagram} alt="instagram" width="39" height="49" loading="eager"/>
             </a>
           </div>
         </div>

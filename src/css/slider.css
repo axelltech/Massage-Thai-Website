@@ -28,6 +28,8 @@
   }
 }
 
+/* titlu principal */
+
 .title-main {
     .module-top {
       @apply my-[40px];
@@ -41,6 +43,8 @@
       }
     }
 }
+
+/* termeni si conditii */
 
 .termeni-conditii {
   p {

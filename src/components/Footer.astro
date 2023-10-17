@@ -32,7 +32,7 @@ import TitleCMN from "../components/TitleCMN.astro";
         <div class="footer-column lg:max-w-[370px]">
           <TitleCMN title="Program"/>
               <div class="flex items-center">
-                <Image src={clock} alt="clock" width="32" height="32"></Image>
+                <Image src={clock} alt="clock" width="31" height="31" loading="eager"></Image>
                 <div class="info-clock ml-3">
                   <p>Duminică - Miercuri: 
                     <span>11:00 - 16:00 PM</span></p>
@@ -43,10 +43,10 @@ import TitleCMN from "../components/TitleCMN.astro";
               <TitleCMN title="Social Media"/>
                 <div class="social-media font-semibold flex flex-wrap mt-2 gap-2 scale-[0.9] mb-2 relative right-[6%]">
                   <a target="_blank" href="https://www.facebook.com/profile.php?id=100094104620583">
-                    <Image src={facebook} alt="facebook" width="39" height="39"/>
+                    <Image src={facebook} alt="facebook" width="39" height="39" loading="eager"/>
                   </a>
                   <a target="_blank" href="https://instagram.com/thaisensation18?igshid=MzRlODBiNWFlZA==" class="p-[1px]">
-                    <Image src={instagram} alt="instagram" width="39" height="39"/>
+                    <Image src={instagram} alt="instagram" width="39" height="39" loading="eager"/>
                   </a>
               </div>
           <hr class="bottom-foot-col"/>
@@ -56,15 +56,15 @@ import TitleCMN from "../components/TitleCMN.astro";
           <div class="list-contact">
             <ul>
               <li>
-                <Image src={phone} alt="phone" width="28" height="28" />
+                <Image src={phone} alt="phone" width="28" height="28" loading="eager" />
                 <a href="tel:0755054654">0755054654</a>
             </li>
             <li>
-              <Image src={location} alt="location" width="28" height="28"/>
+              <Image src={location} alt="location" width="28" height="28" loading="eager"/>
               <a href="https://www.google.com/maps/place/Strada+Ion+Andreescu+18,+Cluj-Napoca+400638/@46.7737559,23.5702483,17z/data=!3m1!4b1!4m6!3m5!1s0x47490e91bc499b91:0x88d6e8262b9fa3a7!8m2!3d46.7737559!4d23.5728286!16s%2Fg%2F11j34nnk24?entry=ttu" target="_blank">Strada Ion Andreescu 18</a>
             </li>
             <li>
-              <Image src={email} alt="email" width="28" height="28"/>
+              <Image src={email} alt="email" width="28" height="28" loading="eager"/>
                 <a href="mailto:office.thaisenzation@gmail.com">office.thaisenzation@gmail.com</a>
             </li>
               </ul>

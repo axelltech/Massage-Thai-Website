@@ -12,7 +12,7 @@ import close from "../img/close-bttn.png";
   <div
     class="modal-content text-white-main absolute top-1/2 left-1/2 w-[90%] bg-redy-400 max-w-[400px] rounded-2xl mx-auto p-4 text-center flex flex-wrap flex-col items-center"
   >
-    <Image src={logo} alt="logo" width="160" height="120" />
+    <Image src={logo} alt="logo" width="160" height="120" loading="eager"/>
     <h2 class="my-3">Verificarea vârstei</h2>
     <p class="opacity-70 w-[90%] mb-2">
       Site-ul conține materiale destinate exclusiv persoanelor adulte și poate include
@@ -25,11 +25,11 @@ import close from "../img/close-bttn.png";
     <h4 class="text-3xl font-medium my-4 italic">Aveți peste 18 ani?</h4>
     <div class="flex gap-4 mb-5">
       <div class="bg-white-main bttn-age text-black-main" id="yesButton">
-        <Image src={tick} alt="logo" width="33" height="33" />
+        <Image src={tick} alt="logo" width="33" height="33" loading="eager"/>
         <p>Da</p>
       </div>
       <div class="bg-black-main bttn-age" id="noButton">
-        <Image src={close} alt="logo" width="33" height="33" />
+        <Image src={close} alt="logo" width="33" height="33" loading="eager"/>
         <p>Nu</p>
       </div>
     </div>
