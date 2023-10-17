@@ -47,3 +47,10 @@
     }
   }
 }
+
+
+.gallery-photos {
+  div {
+    display: block !important;
+  }
+}
