@@ -78,7 +78,7 @@ module.exports = {
 		    scroll: "scroll 40s linear infinite",
         textrevealbox: "text_reveal_box 1s ease",
         textreveal: "text_reveal 0.5s ease forwards",
-        textrevealmain: "text_reveal_main 0.5s ease forwards"
+        textrevealmain: "text_reveal_main 3s ease forwards"
       },
 	  backgroundImage: {
         'price-bg': "url('../src/img/photoFive.jpeg')",

@@ -1,10 +1,12 @@
 .module-top {
+  div {
     h2 {
       @apply block uppercase font-semibold relative w-fit animate-textreveal;
       color: transparent;
       animation-delay: 1s;
-      span {
-        animation-delay: 0.5s;
+      p {
+        @apply text-[12px] md:text-sm animate-textrevealmain block mt-3 opacity-70;
       }
     }
+  }
   }

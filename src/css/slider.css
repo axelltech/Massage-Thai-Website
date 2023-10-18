@@ -32,14 +32,14 @@
 
 .title-main {
     .module-top {
-      @apply my-[40px];
+      @apply my-[22px];
       h2 {
-        @apply animate-textrevealmain md:text-[70px] text-[50px] md:my-5;
+        @apply animate-textrevealmain md:text-[72px] text-[50px] md:my-5;
         color: transparent;
         animation-delay: 1s;
         span {
           animation-delay: 0.5s;
-        }
+      }
       }
     }
 }
