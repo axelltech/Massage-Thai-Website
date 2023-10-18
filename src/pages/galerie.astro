@@ -14,15 +14,15 @@ import { Image } from "astro:assets";
 <MainLayout title="Galerie | Thai Sensation">
             <ModuleTop title="Galerie"/>
                 <div class="gallery-photos">
-                            <div  data-fancybox="gallery" class="fancybox">
-                                <!-- <a href="https://thaisensation.ro/_astro/photoFour.0e27c729_2rJEhw.webp" class="fancybox" data-fancybox="gallery"> -->
+                            <div>
+                                <a href="/dist/_astro/photoFourS.5ae69ccf.jpeg" class="fancybox" data-fancybox="gallery">
                                         <Image src={photoFour} alt="photoFour" width="300" height="370" loading="eager"/>
-                                <!-- </a> -->
+                                </a>
                             </div>
-                            <div class="v-stretch" data-fancybox="gallery" class="fancybox">
-                                <!-- <a href="https://thaisensation.ro/_astro/photoSeven.04953d2f_Z2l4de2.webp" class="fancybox" data-fancybox="gallery"> -->
+                            <div class="v-stretch">
+                                <a href="dist/_astro/photoFourS.5ae69ccf.jpeg" class="fancybox" data-fancybox="gallery">
                                         <Image src={photoOne} alt="photoOne" width="300" height="270" loading="eager"/>
-                                    <!-- </a> -->
+                                    </a>
                                 </div>
                                 
                                 <div>
@@ -63,6 +63,5 @@ import { Image } from "astro:assets";
     $.fancybox.defaults.hash = false;
   });
 </script>
-
 
 
