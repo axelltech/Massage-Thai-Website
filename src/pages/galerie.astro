@@ -8,7 +8,8 @@ import photoFour from "../img/photoFour.jpeg";
 import photoFive from "../img/photoFive.jpeg";
 import photoSix from "../img/photoSix.jpg";
 import photoSeven from "../img/photoSeven.jpg";
-import { Image } from "astro:assets";
+import { Image, getImage } from "astro:assets";
+const photoFive1 = await getImage({src: photoFive, alt: "photoFive"});
 ---
 
 <MainLayout title="Galerie | Thai Sensation">
@@ -38,7 +39,7 @@ import { Image } from "astro:assets";
                                         </a>
                                     </div>
                                     <div >
-                                        <a href="https://i.ibb.co/NxbWgMx/photo-Five.jpg" data-fancybox="gallery" data-slug="cat">
+                                        <a href={photoFive1.src} data-fancybox="gallery" data-slug="cat">
                                                 <Image src={photoFive} alt="photoFive" width="300" height="380" loading="eager"/>
                                             </a>
                                         </div>
