@@ -1,22 +1,22 @@
 //trans
 const languageMap = {
   '/en': {
-    '/galerie': '/gallery',
-    '/preturi': '/prices',
+    '/galerie/': '/gallery/',
+    '/preturi/': '/prices/',
     '/': '/home',
-    '/despre-noi': '/about',
-    '/regulament': '/regulation',
-    '/termeni-conditii': '/terms-conditions',
-    '/contact': '/contact-us'
+    '/despre-noi/': '/about/',
+    '/regulament/': '/regulation/',
+    '/termeni-conditii/': '/terms-conditions/',
+    '/contact/': '/contact-us/'
   },
   '/ro': {
-    '/gallery': '/galerie',
-    '/prices': '/preturi',
+    '/gallery/': '/galerie/',
+    '/prices/': '/preturi/',
     '/home/': '/',
-    '/about': '/despre-noi',
-    '/regulation': '/regulament',
-    '/terms-conditions': '/termeni-conditii',
-    '/contact-us': '/contact'
+    '/about/': '/despre-noi/',
+    '/regulation/': '/regulament/',
+    '/terms-conditions/': '/termeni-conditii/',
+    '/contact-us/': '/contact/'
   }
 };
 
