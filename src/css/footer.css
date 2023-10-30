@@ -16,7 +16,7 @@
         p {
           @apply flex flex-wrap;
           span {
-            @apply ml-2;
+            @apply ml-1;
           }
         }
       }
