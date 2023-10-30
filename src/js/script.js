@@ -12,7 +12,7 @@ const languageMap = {
   '/ro': {
     '/gallery': '/galerie',
     '/prices': '/preturi',
-    '/home': '/',
+    '/home/': '/',
     '/about': '/despre-noi',
     '/regulation': '/regulament',
     '/terms-conditions': '/termeni-conditii',
