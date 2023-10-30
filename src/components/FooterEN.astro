@@ -1,0 +1,86 @@
+---
+import { Image } from "astro:assets";
+import facebook from "../img/facebook.png";
+import instagram from "../img/instagram.png";
+import phone from "../img/phone.png";
+import email from "../img/email.png";
+import location from "../img/location.png";
+import clock from "../img/clock.png";
+import TitleCMN from "../components/TitleCMN.astro";
+---
+
+<footer class="text-white-main bg-gray-500 mt-[70px] md:mt-[150px] w-full">
+    <div class="footer-content flex flex-col content md:pt-8 pb-2">
+      <div class="foot-content-top mb-8 md:mb-0">
+        <div class="footer-column">
+          <TitleCMN title="Key information"/>
+          <div>
+            <ul>
+              <li><a href="/" data-after="Acasa">Home</a></li>
+              <li><a href="/prices" data-after="Preturi">Prices</a></li>
+              <li><a href="/gallery" data-after="Galerie">Gallery</a></li>
+              <li>
+                <a href="/regulation" data-after="Regulament">Regulation</a>
+              </li>
+              <li><a href="/about" data-after="Despre">About</a></li>
+              <li><a href="/contact" data-after="Contact">Contact</a></li>
+              <li><a href="/terms-conditions">Terms and conditions</a></li>
+            </ul>
+          </div>
+          <hr class="bottom-foot-col"/>
+        </div>
+        <div class="footer-column lg:max-w-[370px]">
+          <TitleCMN title="Schedule"/>
+              <div class="flex items-center">
+                <Image src={clock} alt="clock" width="31" height="31" loading="eager"></Image>
+                <div class="info-clock ml-3">
+                  <p>Sunday - Wednesday: 
+                    <span>11:00 - 04:00 AM</span></p>
+                  <p>Thursday - Saturday: <span>12:00 - 07:00 AM</span></p>
+                </div>
+              </div>
+              <hr class="bottom-foot-col mb-[26px]"/>
+              <TitleCMN title="Social Media"/>
+                <div class="social-media font-semibold flex flex-wrap mt-2 gap-2 scale-[0.9] mb-2 relative right-[6%]">
+                  <a target="_blank" href="https://www.facebook.com/profile.php?id=100094104620583">
+                    <Image src={facebook} alt="facebook" width="39" height="39" loading="eager"/>
+                  </a>
+                  <a target="_blank" href="https://instagram.com/thaisensation18?igshid=MzRlODBiNWFlZA==" class="p-[1px]">
+                    <Image src={instagram} alt="instagram" width="39" height="39" loading="eager"/>
+                  </a>
+              </div>
+          <hr class="bottom-foot-col"/>
+        </div>
+        <div class="footer-column">
+          <TitleCMN title="Contact"/>
+          <div class="list-contact">
+            <ul>
+              <li>
+                <Image src={phone} alt="phone" width="28" height="28" loading="eager" />
+                <a href="tel:0755054654">0755054654</a>
+            </li>
+            <li>
+              <Image src={location} alt="location" width="28" height="28" loading="eager"/>
+              <a href="https://www.google.com/maps/place/Strada+Ion+Andreescu+18,+Cluj-Napoca+400638/@46.7737559,23.5702483,17z/data=!3m1!4b1!4m6!3m5!1s0x47490e91bc499b91:0x88d6e8262b9fa3a7!8m2!3d46.7737559!4d23.5728286!16s%2Fg%2F11j34nnk24?entry=ttu" target="_blank">Street Ion Andreescu 18</a>
+            </li>
+            <li>
+              <Image src={email} alt="email" width="28" height="28" loading="eager"/>
+                <a href="mailto:office.thaisenzation@gmail.com">office.thaisenzation@gmail.com</a>
+            </li>
+              </ul>
+            </div>
+          <hr class="bottom-foot-col"/>
+        </div>
+      </div>
+      <div class="foot-content-bottom text-xs">
+        <div class="copyright flex flex-wrap lg:flex-nowrap justify-center mt-3 lg:mt-0 opacity-[0.6]">
+          <p class="mr-2">
+            COPYRIGHT <span>©</span> 2023 Thai Sensation.
+          </p>
+          <p>All rights reserved.</p>
+        </div>
+        <hr class="bottom-foot-col"/>
+      </div>
+    </div>
+  </footer>
+  

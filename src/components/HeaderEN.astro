@@ -10,13 +10,13 @@ import instagram from "../img/instagram.png";
 >
   <div class="header content flex items-center flex-wrap justify-between lg:justify-normal lg:flex-nowrap">
     <div class="nav-content brand pt-2 pb-3">
-      <a class="uppercase text-white-main text-lg font-semibold" href="/"
+      <a class="uppercase text-white-main text-lg font-semibold" href="/home"
         ><Image src={logo} alt="logo" width="120" height="120" class="lg:w-[120px]" loading="eager"></a
       >
     </div>
-    <div class="nav-content lg:justify-center lg:flex block flex-wrap justify-center lg:mr-[37px] lg:ml-[-17px] lg:w-[96%]">
+    <div class="nav-content lg:justify-center lg:flex block flex-wrap justify-center lg:mr-[37px] lg:pr-[74px] lg:ml-[-17px] lg:w-[96%]">
       <div class="additional-info hidden lg:flex items-center text-xs h-[50px] mb-[10px] text-gray-200">
-        <div class="flex gap-1">
+        <div class="flex gap-2">
           <ul class="flex gap-1">
             <li>
               <a href="tel:0755054654">0755054654</a>
@@ -27,9 +27,9 @@ import instagram from "../img/instagram.png";
             </li>
             •
           </ul>
-          <p class="uppercase">Duminică - Miercuri:<span class="ml-2">11:00 - 04:00 AM</span></p>
+          <p class="uppercase">Sun - Wed:<span class="ml-2">11:00 - 04:00 AM</span></p>
           •
-          <p class="uppercase">Joi - Sambată:<span class="ml-2">12:00 - 07:00 AM</span></p>
+          <p class="uppercase">Thu - Sat:<span class="ml-2">12:00 - 07:00 AM</span></p>
           <div class="rounded-full"></div>
         </div>
         <div class="scale-[0.6] opacity-80">
@@ -43,7 +43,7 @@ import instagram from "../img/instagram.png";
           </div>
         </div>
         <div class="hidden lg:block">
-          <button class="roButton">RO</button>
+          <button class="roButton" >RO</button>
           <span class="mx-1">|</span>
           <button class="enButton">EN</button>
         </div>
@@ -62,14 +62,14 @@ import instagram from "../img/instagram.png";
           <ul
             class="list-none absolute w-screen h-screen left-full top-0 flex items-center flex-col z-[1] justify-center over overflow-x-hidden opacity-90"
           >
-            <li><a href="/" data-after="Acasa">Acasă</a></li>
-            <li><a href="/preturi" data-after="Preturi" class="active">Prețuri</a></li>
-            <li><a href="/galerie" data-after="Galerie" class="active">Galerie</a></li>
+            <li><a href="/home" data-after="Home">Home</a></li>
+            <li><a href="/prices" data-after="Prices" class="active">Prices</a></li>
+            <li><a href="/gallery" data-after="Gallery" class="active">Gallery</a></li>
             <li>
-              <a href="/regulament" data-after="Regulament">Regulament</a>
+              <a href="/regulation" data-after="Regulation">Regulation</a>
             </li>
-            <li><a href="/despre-noi" data-after="Despre">Despre noi</a></li>
-            <li><a href="/contact" data-after="Contact">Contact</a></li>
+            <li><a href="/about" data-after="About">About</a></li>
+            <li><a href="/contact-us" data-after="Contact">Contact</a></li>
             <div class="block lg:hidden text-2xl p-5">
               <button class="roButton">RO</button>
               <span class="mx-1">|</span>
@@ -81,8 +81,3 @@ import instagram from "../img/instagram.png";
     </div>
   </div>
 </header>
-
-<script>
-
-</script>
-

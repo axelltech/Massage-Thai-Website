@@ -1,21 +1,23 @@
 ---
-import MainLayout from "../layouts/MainLayout.astro";
+import { Image } from "astro:assets";
+import LayoutMain from "../layouts/LayoutMain.astro";
 import ModuleTop from "../components/ModuleTop.astro";
 import ModuleCMN from "../components/ModuleCMN.astro";
+import thaiWoman from "../img/thai-woman.png";
 ---
 
-<MainLayout title="Regulament | Thai Sensation">
+<LayoutMain title="Regulament | Thai Sensation">
   <div class="content-cmn-sec">
+    <div class="mt-[50px] md:mt-[40px] top-[105px] md:top-0 left-0 xl:left-auto md:mr-[92%] md:w-max absolute opacity-20">
+      <Image src={thaiWoman} alt="bambusPrice" width="410" height="400" class="w-auto h-[514px] md:h-auto" loading="eager">
+    </div>
     <ModuleTop title="Regulament">
       <p>Drepturile și obligațiile clientului!</p>
       </ModuleTop>
     <ModuleCMN
       content="Vrem ca în această incintă să fie tratate cu respect toate maseuzele și hostess-ul, încalcarea acestei reguli va aduce întreruperea serviciilor fără returnarea banilor."
-    >
-      <p>
-        <b>NU rapoartelor sexuale!</b> Nu trebuie să vă simțiți ofensați sau refuzați
-        dar nu încurajăm relații sexuale între angajat și client, asa că vă rog
-        să întelegeți că <b>NU rămâne NU.</b>
+      >
+      <p data-translation-key="contactTitle2" class="translateable">
       </p>
       <p>
         Dacă insistați angajatul o să trebuiască să părăsească încăperea, asa că
@@ -24,4 +26,4 @@ import ModuleCMN from "../components/ModuleCMN.astro";
       <a class="opacity-80 font-semibold italic" href="/termeni-conditii">Citește mai multe aici...</a>
     </ModuleCMN>
   </div>
-</MainLayout>
+</LayoutMain>

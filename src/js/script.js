@@ -1,3 +1,64 @@
+//trans
+const languageMap = {
+  '/en': {
+    '/galerie': '/gallery',
+    '/preturi': '/prices',
+    '/': '/home',
+    '/despre-noi': '/about',
+    '/regulament': '/regulation',
+    '/termeni-conditii': '/terms-conditions',
+    '/contact': '/contact-us'
+  },
+  '/ro': {
+    '/gallery': '/galerie',
+    '/prices': '/preturi',
+    '/home': '/',
+    '/about': '/despre-noi',
+    '/regulation': '/regulament',
+    '/terms-conditions': '/termeni-conditii',
+    '/contact-us': '/contact'
+  }
+};
+
+const handleLanguageChange = lang => {
+  const currentURL = window.location.pathname;
+  const newURL = languageMap[lang][currentURL];
+  if (newURL && currentURL !== newURL) {
+    window.location.href = newURL;
+  }
+};
+
+const addActiveClass = (buttons, urlMap) => {
+  const currentURL = window.location.pathname;
+  buttons.forEach(button => {
+    const lang = Object.keys(urlMap).find(
+      key => currentURL === key || urlMap[key][currentURL]
+    );
+    button.classList.toggle('active', lang === button.dataset.lang);
+  });
+};
+
+const enButtons = document.querySelectorAll('.enButton');
+const roButtons = document.querySelectorAll('.roButton');
+
+addActiveClass(enButtons, languageMap['/en']);
+addActiveClass(roButtons, languageMap['/ro']);
+
+enButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    addActiveClass(enButtons, languageMap['/en']);
+    handleLanguageChange('/en');
+  });
+});
+
+roButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    addActiveClass(roButtons, languageMap['/ro']);
+    handleLanguageChange('/ro');
+  });
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const ageModal = document.getElementById('ageModal');
   const yesButton = document.getElementById('yesButton');
@@ -15,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('mainContent').style.display = 'block';
       localStorage.setItem('ageConfirmed', 'true');
       document.body.classList.remove('modal-open'); 
+      window.location.reload();
   });
 
   noButton.addEventListener('click', function() {
@@ -22,61 +84,17 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+//lang-trans
+
 //navbar
 const hamburger = document.querySelector(
   ".header .nav-bar .nav-list .hamburger"
 );
 const mobileMenu = document.querySelector(".header .nav-bar .nav-list ul");
 const header = document.querySelector(".header.content");
-const headerNav = document.querySelectorAll(".nav-content");
 const buttons = document.querySelectorAll(".button");
 
 hamburger.addEventListener("click", () => {
   hamburger.classList.toggle("active");
   mobileMenu.classList.toggle("active");
 });
-
-
-window.addEventListener("load", executeCodes);
-
-const applyBorder = () => {
-  const windowWidth = window.innerWidth;
-  const targetWidth = 1020;
-  if (windowWidth > targetWidth) {
-    document.addEventListener("scroll", () => {
-      let scroll_position = window.scrollY;
-      if (scroll_position > 10) {
-        headerNav.forEach((elem) => {
-          elem.style.borderBottom = "1px solid rgba(255, 255, 255, 0.3)";
-        });
-      } else {
-        headerNav.forEach((elem) => {
-          elem.style.borderBottom = "0px";
-        });
-      }
-    });
-  } else {
-    document.addEventListener("scroll", () => {
-      let scroll_position = window.scrollY;
-      if (scroll_position > 10) {
-        headerNav.forEach((elem) => {
-          elem.style.borderBottom = "0px";
-        });
-      }
-    });
-  }
-};
-window.addEventListener("resize", applyBorder);
-applyBorder();
-
-
-
-
-
-//jQuery to switch logic and place
-// $(document).ready(function () {
-//   $.fancybox.defaults.hash = false;
-// });
-// const options = {
-//   Hash: false,
-// };

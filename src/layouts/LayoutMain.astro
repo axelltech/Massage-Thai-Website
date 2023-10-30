@@ -15,7 +15,7 @@ const { title } = Astro.props;
 <html lang="ro">
   <head>
     <meta charset="UTF-8" />
-    <meta name="description" content="Astro description" />
+    <meta name="description" content="Thai Sensation este un salon de masaj erotic din Cluj Napoca, România"/>
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -24,17 +24,15 @@ const { title } = Astro.props;
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="icon" href="src/img/thai-sensation-logo.ico" type="image/x-icon"> -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" href="{Astro.url.pathname}" hreflang="en" />
     <title>{title}</title>
   </head>
   <body>
-    <Header />
     <AgeGate/>
+    <Header/>
     <main id="mainContent" class="content">
-      <slot>
-        <!-- <slot class="content"> Page in progress</slot> -->
-      </slot>
+      <slot/>
       <script>
 		  import "../js/script.js";
 		  </script>
@@ -45,3 +43,4 @@ const { title } = Astro.props;
 	<Footer />
   </body>
 </html>
+

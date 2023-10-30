@@ -1,5 +1,5 @@
 ---
-import LayoutMain from '../layouts/LayoutMain.astro';
+import LayoutEnglish from '../layouts/LayoutEnglish.astro';
 import ModuleTop from '../components/ModuleTop.astro';
 import photoOne from "../img/photoOne.jpeg";
 import photoTwo from "../img/photoTwo.jpeg";
@@ -12,9 +12,9 @@ import { Image, getImage } from "astro:assets";
 const photoFive1 = await getImage({src: photoFive, alt: "photoFive"});
 ---
 
-<LayoutMain title="Galerie | Thai Sensation">
-            <ModuleTop title="Galerie">
-                <p>Cunoaște plăcerea din spatele fiecărei fotografii!</p>
+<LayoutEnglish title="Gallery | Thai Sensation">
+            <ModuleTop title="Gallery">
+                <p>Discover the pleasure behind each photograph!</p>
             </ModuleTop>
                 <div class="gallery-photos">
                             <div>
@@ -55,7 +55,7 @@ const photoFive1 = await getImage({src: photoFive, alt: "photoFive"});
                                         </a>
                                     </div>
             </div>
-</LayoutMain>
+</LayoutEnglish>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js">

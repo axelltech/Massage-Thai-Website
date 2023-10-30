@@ -1,0 +1,37 @@
+---
+import LayoutEnglish from "../layouts/LayoutEnglish.astro";
+import Slider from "../components/Slider.astro";
+import ModuleCMN from "../components/ModuleCMN.astro";
+import ModuleTop from "../components/ModuleTop.astro";
+---
+
+<LayoutEnglish title="Thai Sensation">
+  <div class="mt-[114px] lg:mt-[117px] flex flex-col items-center w-full">
+    <Slider />
+    <div>
+      <a
+        href="/prices"
+        class="uppercase bg-red p-4 block w-max rounded-xl font-semibold hover:text-black-main mt-[57px] text-lg ro"
+      >
+        Price list
+      </a>
+    </div>
+    <div class="title-main">
+      <ModuleTop title="Thai Sensation" />
+    </div>
+    <div class="content-cmn-sec">
+      <ModuleCMN
+        content="THAI SENSATION is the only thai salon in Cluj-Napoca where the masseuses are actually from Thailand."
+      >
+        <p>
+          Therefore, they have training and certification as a Thai masseuse. We want YOU to come with great confidence, and we will guarantee that you will taste the Thai erotic massage and feel very relaxed and calm, just like in dreams.
+        </p>
+        <p>
+          I highly recommend the Thai erotic massage, and you will truly be satisfied and fulfilled. 
+        </p>
+      </ModuleCMN>
+    </div>
+  </div>
+</LayoutEnglish>
+
+

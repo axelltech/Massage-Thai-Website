@@ -1,25 +1,25 @@
 ---
 import { Image } from "astro:assets";
 import bambusPrice from "../img/bambus-price.png";
-import LayoutMain from "../layouts/LayoutMain.astro";
+import LayoutEnglish from "../layouts/LayoutEnglish.astro";
 import MassageItem from "../components/MassageItem.astro";
 import ModuleTop from "../components/ModuleTop.astro";
 ---
 
-<LayoutMain title="Prețuri | Thai Sensation">
+<LayoutEnglish title="Prices | Thai Sensation">
   <div class="flex flex-col items-center text-white-main">
     <div class="mt-[80px] top-[105px] md:top-0 left-0 xl:left-auto md:mr-[92%] md:w-max absolute opacity-30">
       <Image src={bambusPrice} alt="bambusPrice" width="600" height="900" class="w-auto h-[814px] md:h-auto" loading="eager">
     </div>
-      <ModuleTop title="Prețuri">
-      <p>Descoperă arta plăcerii la prețuri accesibile!</p>
+      <ModuleTop title="Prices">
+      <p>Discover the art of pleasure with affordable prices!</p>
   </ModuleTop>
       <MassageItem title="Thai Sensation Dream" time="40 min" price="200 RON" />
       <MassageItem title="Thai Sensation Heaven" time="60 min" price="250 RON" />
       <MassageItem title="Thai Sensation Hot Oil" time="60 min" price="300 RON" />
       <MassageItem title="Thai Sensation Power" time="40 min" price="250 RON" />
-      <MassageItem title="Thai Sensation Dublu" time="20/25 min" price="350 RON"/>
-      <MassageItem title="Thai Sensation Dublu" time="60 min" price="450 RON" />
-      <MassageItem title="Thai Sensation Cupluri" time="60 min" price="450 RON" />
+      <MassageItem title="Thai Sensation Double" time="20/25 min" price="350 RON"/>
+      <MassageItem title="Thai Sensation Double" time="60 min" price="450 RON" />
+      <MassageItem title="Thai Sensation Couples" time="60 min" price="450 RON" />
 </div>
-</LayoutMain>
+</LayoutEnglish>

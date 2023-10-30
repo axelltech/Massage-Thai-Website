@@ -1,0 +1,28 @@
+---
+import { Image } from "astro:assets";
+import LayoutEnglish from "../layouts/LayoutEnglish.astro";
+import ModuleTop from "../components/ModuleTop.astro";
+import ModuleCMN from "../components/ModuleCMN.astro";
+import thaiWoman from "../img/thai-woman.png";
+---
+
+<LayoutEnglish title="Regulation | Thai Sensation">
+  <div class="content-cmn-sec">
+    <div class="mt-[50px] md:mt-[40px] top-[105px] md:top-0 left-0 xl:left-auto md:mr-[92%] md:w-max absolute opacity-20">
+      <Image src={thaiWoman} alt="bambusPrice" width="410" height="400" class="w-auto h-[514px] md:h-auto" loading="eager">
+    </div>
+    <ModuleTop title="Regulation">
+      <p>The rights and obligations of the client!</p>
+      </ModuleTop>
+    <ModuleCMN
+      content="We want all masseuses and hostesses to be treated with respect in this premises, violation of this rule will result in service interruption without refund."
+      >
+      <p data-translation-key="contactTitle2" class="translateable">
+      </p>
+      <p>
+        If you insist, the employee will have to leave the room, so please do not insist on services beyond the erotic massage session.
+      </p>
+      <a class="opacity-80 font-semibold italic" href="/termeni-conditii">Read more here...</a>
+    </ModuleCMN>
+  </div>
+</LayoutEnglish>

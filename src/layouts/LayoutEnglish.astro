@@ -1,0 +1,46 @@
+---
+import "/src/styles/styles.css";
+import HeaderEN from "../components/HeaderEN.astro";
+import FooterEN from "../components/FooterEN.astro";
+import AgeGateEN from "../components/AgeGateEN.astro";
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Thai Sensation is an erotic massage salon from Cluj Napoca, Romania"/>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate" href="{Astro.url.pathname}" hreflang="ro" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <AgeGateEN/>
+    <HeaderEN/>
+    <main id="mainContent" class="content">
+      <slot/>
+      <script>
+		  import "../js/script.js";
+		  </script>
+      <!-- <script type="module">
+		  import "./src/js/script.js";
+		</script> -->
+    </main>
+	<FooterEN/>
+  </body>
+</html>
+
